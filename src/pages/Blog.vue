@@ -1,21 +1,22 @@
 <template>
    <div>
-      <Layout></Layout>
-      <!-- <BlogTemplate></BlogTemplate> -->
-      <AllBlogs>
-         
-      </AllBlogs>
+      <Layout>
+         <BlogList></BlogList>
+
+      </Layout>
+      
+      
   </div>
 </template>
 
 <script>
-import AllBlogs from '../components/AllBlogs'
+import BlogList from '../components/BlogList'
 export default {
    metaInfo: {
     title: 'Blog'
   },
   components: {
-     AllBlogs
+     BlogList
   }
 }
 </script>

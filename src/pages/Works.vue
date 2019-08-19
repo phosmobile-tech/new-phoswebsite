@@ -1,15 +1,22 @@
 <template>
   <div>
-      <Layout></Layout>
+      <Layout>
 
-      <AllWorks></AllWorks>
+        <WorkList></WorkList>
+      </Layout>
+
+      
   </div>
 </template>
 
 <script>
+import WorkList from '../components/WorkList'
 export default {
    metaInfo: {
-    title: 'Our Works'
+    title: 'Works'
+  },
+  components: {
+     WorkList
   }
 }
 </script>

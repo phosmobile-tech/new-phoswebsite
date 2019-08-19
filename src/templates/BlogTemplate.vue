@@ -1,11 +1,8 @@
 <template>
   <div>
     <ul>
-        <li v-for="post in $pages.edges.posts" :key="post.id">
-            <g-link to="post.node.path">{{ post.title }}</g-link>
-        </li>
-        <li>
-            <g-link to="/pages/blogs/two">two</g-link>
+        <li v-for="post in $page.posts.edges" :key="post.id">
+            <g-link :to="post.node.path">{{ post.node.title }}</g-link>
         </li>
     </ul>
       
@@ -29,7 +26,9 @@ query {
 
 <script>
 export default {
-    name: 'BlogTemplate'
+    metaInfo: {
+      name: 'BlogTemplate'
+    }
 }
 </script>
 

@@ -1,12 +1,21 @@
 <template>
    <div>
-      <Layout></Layout>
+      <Layout>
+
+         <CareerList></CareerList>
+      </Layout>
   </div>
 </template>
 
 <script>
+import CareerList from '../components/CareerList'
 export default {
-
+   metaInfo: {
+    title: 'Career'
+  },
+  components: {
+     CareerList
+  }
 }
 </script>
 

@@ -2,10 +2,10 @@
   <div>
     <ul>
         <li>
-            <g-link to="/pages/blogs/one">One</g-link>
+            <g-link to="/works/work-one">Work One</g-link>
         </li>
         <li>
-            <g-link to="/pages/blogs/two">two</g-link>
+            <g-link to="/works/work-two">Work Two</g-link>
         </li>
     </ul>
       
@@ -14,7 +14,9 @@
 
 <script>
 export default {
-
+    metaInfo: {
+      title: 'Work List'
+    }
 }
 </script>
 
