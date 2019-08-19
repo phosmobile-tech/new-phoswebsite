@@ -1,16 +1,13 @@
 <template>
   <div>
-      <Layout></Layout>
-
-      <AllWorks></AllWorks>
+    
+      
   </div>
 </template>
 
 <script>
 export default {
-   metaInfo: {
-    title: 'Our Works'
-  }
+
 }
 </script>
 
