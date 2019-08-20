@@ -15,6 +15,7 @@
       </nav>
     </header>
     <slot/>
+    <footer class="footer">All Rights Reserved | phosmobile.com</footer>
   </div>
 </template>
 
@@ -51,5 +52,9 @@ body {
 
 .nav__link {
   margin-left: 20px;
+}
+
+.footer {
+    margin-top: 70%;
 }
 </style>
