@@ -56,17 +56,59 @@
       </section>
 
       <section class="container">
-          <div class="content-left">
+        <div>
+          <div class="content-right">
             <h2>FROM THE INSIDE OUT.</h2>
             <p>Our team and our culture is fueled by passion: for what we do, for the people <br> we do it for, and for the people we work alongside. Take a glimpse behind the <br> scenes at the heart of our company and the people who make up Focus Lab.</p>
           </div>
-            <aside>
-              <ul class="aside-ul-left">
-                <li><a href="#" class="aside-a">Our Digest</a></li>
-                <li><a href="#" class="aside-a">Our Core Values</a></li>
-                <li><a href="#" class="aside-a">Meet Our Team</a></li>
-              </ul>
+            <aside class="cont">
+                <ul class="aside-ul-left">
+                  <li><a href="#" class="aside-a">Our Digest</a></li>
+                  <li><a href="#" class="aside-a">Our Core Values</a></li>
+                  <li><a href="#" class="aside-a">Meet Our Team</a></li>
+                </ul>
             </aside>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="img-container">
+          <span class="logo">#LOGOS</span>
+        <ul class="work-list">
+          <li>
+            <a href="#"><img src="../phos-logo.png" alt="" class="img"></a>
+          </li>
+          <li>
+            <a href="#"><img src="../phos-logo.png" alt="" class="img"></a>
+          </li>
+          <li>
+            <a href="#"><img src="../phos-logo.png" alt="" class="img"></a>
+          </li>
+        </ul>
+      </div>
+      </section>
+
+      <section class="container">
+        <hr>
+        <ul class="article-list">
+          <li class="categories">
+            <a href="" class="category-text">
+              <div>
+                <span class="article-top">CULTURE, OUR TEAM</span>
+                <h3>OUT OF FOCUS: <br> CASHIERS</h3>
+                  <h6>BY KELLIE GROOVER</h6>
+              </div>
+            </a>
+          </li>
+          <li class="categories">
+            <a href="" class="category-text">
+              <div>
+                <h3>BEST PRACTICES <br> FOR LAUNCHING <br> YOUR BRAND</h3>
+                  <h6>BY SUMMER TEAL</h6>
+              </div>
+            </a>
+          </li>
+        </ul>
       </section>
   
   </Layout>
@@ -100,6 +142,21 @@ h2 {
   font-family: 'Barlow Condensed';
   font-weight: bold;
   font-size: 45px;
+  line-height: 0.1;
+}
+
+h3 {
+  color: #2e3c40;
+  font-family: 'Barlow Condensed';
+  font-weight: bold;
+  font-size: 45px;
+}
+
+h6 {
+   color: #2e3c40;
+  font-family: 'Barlow Condensed';
+  font-weight: bold;
+  font-size: 18px;
 }
 
 p {
@@ -166,16 +223,48 @@ p {
 }
 
 .aside-ul-left {
-  position: relative;
   list-style-type: none;
+  width: 25%;
 }
 
-.content-left {
+.content-right {
+  margin-top: -50px;
   float: right;
 }
 
 .video {
   margin-top: 10%;
+}
+
+.logo {
+  font-size: 50px;
+  text-align: center;
+}
+
+hr {
+  color: #ff5c5c;
+}
+
+.categories {
+    width: 30%;
+}
+
+.category-text {
+  text-decoration: none;
+  /* display: block; */
+}
+
+.article-list {
+  list-style-type: none;
+
+  border-right: 1px #ff5c5c;
+  padding: 5% 7%;
+  display: contents;
+}
+
+.article-top {
+  font-family: 'Barlow Condensed';
+  font-size: 18px;
 }
 
 
