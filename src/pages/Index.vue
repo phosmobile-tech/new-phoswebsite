@@ -6,7 +6,7 @@
       <span>We build identities and experiences to <br> elevate and empower organizations.</span>
       <div class="span-text">
         <span class="sub-text">HELPING OUR PARTNERS MOVE FORWARD THROUGH</span>
-        <span class="sub-link"><a href="#">Discovery & Strategy,</a><a href="#">Branding,</a> <a href="#">Interactive,</a><br> <a href="#">Communications,</a> <a href="#">Creative Production and</a><br> <a href="#">Development Solutions</a></span>
+        <span class="sub-link"><g-link to="">Discovery & Strategy,</g-link><g-link to="">Branding,</g-link> <g-link to="">Interactive,</g-link><br> <g-link to="">Communications,</g-link> <g-link to="">Creative Production and</g-link><br> <g-link to="">Development Solutions</g-link></span>
       </div>
       </section>
 
@@ -14,16 +14,17 @@
       <div class="img-container">
         <ul class="work-list">
           <li>
-            <a href="#"><img src="../phos-logo.png" alt="" class="img"></a>
+            <g-link to="/works/work-two"><img src="http://successwithinint.com/wp-content/uploads/2019/05/SWI-Logo-768x474.jpg" alt="" class="img"></g-link>
           </li>
           <li>
-            <a href="#"><img src="../phos-logo.png" alt="" class="img"></a>
+            <g-link to="/works/work-one"><picture><img src="http://gemstoneijmb.com/images/svg/logo.svg" alt="" class="img"></picture> </g-link>
+          </li>
+          
+          <li>
+            <g-link to="/works/work-one"><img src="/works/swi.jpg" alt="" class="img"></g-link>
           </li>
           <li>
-            <a href="#"><img src="../phos-logo.png" alt="" class="img"></a>
-          </li>
-          <li>
-            <a href="#">See more works</a>
+            <g-link to="/works">See more works</g-link>
           </li>
         </ul>
       </div>
@@ -37,22 +38,12 @@
 
             <aside>
               <ul class="aside-ul">
-                <li><a href="#" class="aside-a">Our Services</a></li>
-                <li><a href="#"  class="aside-a">Read Our Story</a></li>
-                <li><a href="#" class="aside-a">Contact Us</a></li>
+                <li><g-link to="" class="aside-a">Our Services</g-link></li>
+                <li><g-link to="" class="aside-a">Read Our Story</g-link></li>
+                <li><g-link to="" class="aside-a">Contact Us</g-link></li>
               </ul>
             </aside>
           </div>
-      </section>
-
-      <section>
-        <div class="video">
-          <video width="850" height="450" controls>
-            <source src="movie.mp4" type="video/mp4">
-            <source src="movie.ogg" type="video/ogg">
-            Your browser does not support the video tag.
-          </video>
-        </div>
       </section>
 
       <section class="container">
@@ -63,9 +54,9 @@
           </div>
             <aside class="cont">
                 <ul class="aside-ul-left">
-                  <li><a href="#" class="aside-a">Our Digest</a></li>
-                  <li><a href="#" class="aside-a">Our Core Values</a></li>
-                  <li><a href="#" class="aside-a">Meet Our Team</a></li>
+                  <li><g-link to="" class="aside-a">Our Digest</g-link></li>
+                  <li><g-link to="" class="aside-a">Our Core Values</g-link></li>
+                  <li><g-link to="" class="aside-a">Meet Our Team</g-link></li>
                 </ul>
             </aside>
         </div>
@@ -76,37 +67,36 @@
           <span class="logo">#LOGOS</span>
         <ul class="work-list">
           <li>
-            <a href="#"><img src="../phos-logo.png" alt="" class="img"></a>
+            <g-link to="/works"><img src="../phos-logo.png" alt="" class="img"></g-link>
           </li>
           <li>
-            <a href="#"><img src="../phos-logo.png" alt="" class="img"></a>
+            <g-link to="/works"><img src="../phos-logo.png" alt="" class="img"></g-link>
           </li>
           <li>
-            <a href="#"><img src="../phos-logo.png" alt="" class="img"></a>
+            <g-link to="/works"><img src="../phos-logo.png" alt="" class="img"></g-link>
           </li>
         </ul>
       </div>
       </section>
 
-      <section class="container">
-        <hr>
+      <section class="article-container">
         <ul class="article-list">
           <li class="categories">
-            <a href="" class="category-text">
-              <div>
+            <g-link to="" class="category-text"></g-link>
+              <div class="article-left">
                 <span class="article-top">CULTURE, OUR TEAM</span>
                 <h3>OUT OF FOCUS: <br> CASHIERS</h3>
                   <h6>BY KELLIE GROOVER</h6>
               </div>
-            </a>
+            
           </li>
           <li class="categories">
-            <a href="" class="category-text">
+            <g-link to="" class="category-text"></g-link>
               <div>
                 <h3>BEST PRACTICES <br> FOR LAUNCHING <br> YOUR BRAND</h3>
                   <h6>BY SUMMER TEAL</h6>
               </div>
-            </a>
+            
           </li>
         </ul>
       </section>
@@ -164,17 +154,20 @@ p {
   color: #2e3c40;
   line-height: 2;
   font-size: 15px;
+  
 }
 .sub-text {
   font-family: 'Barlow Condensed';
   float: right;
   margin-right: 335px;
   margin-bottom: 15px;
+  margin-top: 8px;
 }
 .sub-link {
   font-size: 20px;
   float: right;
   margin-right: 235px; 
+  
 } 
 
 .sub-link a {
@@ -185,6 +178,7 @@ p {
   margin-top: -50px;
   float: right;
   margin-left: 310px; 
+  line-height: 1.5;
 }
 
 .img-container {
@@ -192,17 +186,18 @@ p {
 }
 
 .img {
-  max-width: 300px;
+  width: 400px;
 }
 
 .container {
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
 .work-list {
-    display:flex;
+    display: flex;
     list-style-type: none;
     width: 50%;
+    
 }
 
 .content {
@@ -241,12 +236,11 @@ p {
   text-align: center;
 }
 
-hr {
-  color: #ff5c5c;
-}
-
 .categories {
-    width: 30%;
+    width: 50%;
+    position: relative;
+    display: inline-block;
+    /* padding: 10px 7px; */
 }
 
 .category-text {
@@ -256,16 +250,28 @@ hr {
 
 .article-list {
   list-style-type: none;
-
-  border-right: 1px #ff5c5c;
-  padding: 5% 7%;
-  display: contents;
+  border-top: 1px solid red;
+  /* display: contents; */
 }
 
 .article-top {
   font-family: 'Barlow Condensed';
   font-size: 18px;
 }
+
+.article-left {
+  border-right: 1px solid red;
+  padding-top: 0;
+}
+
+.article-container {
+  margin-top: 15%;
+  /* display: block; */
+}
+
+/* .article-container {
+  display: block;
+} */
 
 
 </style>
