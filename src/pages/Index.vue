@@ -3,13 +3,16 @@
     <section class="container">
       <h1>SOLUTIONS BY DESIGN</h1>
 
-      <span>We build identities and experiences to <br> elevate and empower organizations.</span>
+      <span class="text">We build identities and experiences to <br> elevate and empower organizations.</span>
       <div class="span-text">
         <span class="sub-text">HELPING OUR PARTNERS MOVE FORWARD THROUGH</span>
         <span class="sub-link"><g-link to="">Discovery & Strategy,</g-link><g-link to="">Branding,</g-link> <g-link to="">Interactive,</g-link><br> <g-link to="">Communications,</g-link> <g-link to="">Creative Production and</g-link><br> <g-link to="">Development Solutions</g-link></span>
       </div>
       </section>
 
+    <section class="container">
+      <!-- <GenList /> -->
+    </section>
       <section>
       <div class="img-container">
         <ul class="work-list">
@@ -33,7 +36,7 @@
       <section class="container">
           <h2>LET’S BUILD SOMETHING GREAT. TOGETHER.</h2>
           <div class="content">
-            <p>We are a strategic, creative studio based out of Savannah, Georgia. <br> Our close team of innovative professionals is passionate about partnering <br> with good people and organizations to design exceptional custom solutions. <br> We approach each project and design challenge with process-driven <br> intentionality to inform the identities and experiences we create. <br> We endeavor toward work that drives action, and generates results. <br> Are you looking to have greater impact? We’d love to help.</p>
+            <p class="text">We are a strategic, creative studio based out of Savannah, Georgia. <br> Our close team of innovative professionals is passionate about partnering <br> with good people and organizations to design exceptional custom solutions. <br> We approach each project and design challenge with process-driven <br> intentionality to inform the identities and experiences we create. <br> We endeavor toward work that drives action, and generates results. <br> Are you looking to have greater impact? We’d love to help.</p>
 
 
             <aside>
@@ -50,7 +53,7 @@
         <div>
           <div class="content-right">
             <h2>FROM THE INSIDE OUT.</h2>
-            <p>Our team and our culture is fueled by passion: for what we do, for the people <br> we do it for, and for the people we work alongside. Take a glimpse behind the <br> scenes at the heart of our company and the people who make up Focus Lab.</p>
+            <p class="text">Our team and our culture is fueled by passion: for what we do, for the people <br> we do it for, and for the people we work alongside. Take a glimpse behind the <br> scenes at the heart of our company and the people who make up Focus Lab.</p>
           </div>
             <aside class="cont">
                 <ul class="aside-ul-left">
@@ -105,10 +108,13 @@
 </template>
 
 <script>
+// import works from '../'
+// import GenList from '../components/GenList'
 export default {
   metaInfo: {
     title: 'Hello, world!'
-  }
+  },
+  props: ['works']
 }
 </script>
 
@@ -149,19 +155,20 @@ h6 {
   font-size: 18px;
 }
 
-p {
+.text {
   font-family: 'Montserrat', sans-serif;
   color: #2e3c40;
   line-height: 2;
-  font-size: 15px;
+  font-size: 18px;
   
 }
 .sub-text {
   font-family: 'Barlow Condensed';
   float: right;
-  margin-right: 335px;
+  margin-right: 265px;
   margin-bottom: 15px;
-  margin-top: 8px;
+  margin-top: -15px;
+  font-size: 20px;
 }
 .sub-link {
   font-size: 20px;
@@ -177,7 +184,7 @@ p {
 .span-text {
   margin-top: -50px;
   float: right;
-  margin-left: 310px; 
+  /* margin-left: 310px;  */
   line-height: 1.5;
 }
 

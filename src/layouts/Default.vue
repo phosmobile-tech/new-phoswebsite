@@ -14,9 +14,7 @@
         <g-link class="nav__link" to="/contact">Contact Us</g-link>
       </nav>
     </header>
-    <div class="contain-all">
-      <slot/>
-    </div>
+    <slot/>
     <footer class="footer">All Rights Reserved | phosmobile.com</footer>
   </div>
 </template>
@@ -46,20 +44,26 @@ body {
   font-family: 'Barlow Condensed';
   text-transform: uppercase;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-top: 20px;
   height: 80px; 
+  padding-inline-start: 160px;
+  padding-inline-end: 100px;
 }
 
 .nav__link {
   margin-right: 50px;
   text-decoration: none;
+  font-size: 18px;
 }
 
 .container {
-  max-width: 90%;
-  padding-left: 100px;
+  max-width: 1200px;
+  padding-inline-start: 160px;
+  margin-top: 15%;
+  /* padding-inline-end: 40px; */
+  /* padding-left: 100px; */
 }
 
 /* .contain-all {

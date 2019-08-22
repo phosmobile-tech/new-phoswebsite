@@ -2,7 +2,7 @@
   <div>
     <Layout>
       <section class="container">
-        <h1>Success Within International</h1>
+        <h1></h1>
           <aside>
             <h4>THE CHALLENGE</h4>
           </aside>

@@ -5,8 +5,7 @@
         <h1>Gemstone</h1>
           <aside>
             <h4>THE CHALLENGE</h4>
-          </aside>
-          
+          </aside>        
           <div class="content">
             <p>Outreach needed to re-energize an industry-leading sales engagement platform and promote a fun company culture. In a saturated, jargon-filled market, it was our first challenge to give this work-hard/play-hard team a stand-out brand makeover. But the real challenge came in redesigning and developing a fluid website that could communicate how intuitive and rewarding their platform is to use — while capturing everything Outreach offers.</p>
           </div>

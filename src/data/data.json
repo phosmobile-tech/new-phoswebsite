@@ -1,0 +1,49 @@
+ {
+     "data": {
+        "works": [
+            {
+                "id": 1,
+                "slug": "gemstone",
+                "title": "Gemstone"
+            },
+            {
+                "id": 2,
+                "slug": "swi",
+                "title": "Success Within International"
+            },
+            {
+                "id": 2,
+                "slug": "daisy",
+                "title": "Daisy Confectioneries"
+            }
+        ],
+        "products": [
+            {
+                "id": 1,
+                "title": "xpense buddy"
+            },
+            {
+                "id": 2,
+                "title": "muteapp"
+            },
+            {
+                "id": 2,
+                "title": "daisy"
+            }
+        ],
+        "careers": [
+            {
+                "id": 1,
+                "title": "gemstone"
+            },
+            {
+                "id": 2,
+                "title": "swi"
+            },
+            {
+                "id": 2,
+                "title": "daisy"
+            }
+        ]
+    }
+}

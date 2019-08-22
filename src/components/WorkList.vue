@@ -2,7 +2,9 @@
   <div>
     <ul>
         <li>
-            <g-link to="/works/gemstone">Work One</g-link>
+          <div  v-for="work in works" :key="work.id">
+            <g-link :to="'/works/'+work.title ">{{work.title}}</g-link>
+            </div>
         </li>
         <li>
             <g-link to="/works/swi">Work Two</g-link>
@@ -13,13 +15,20 @@
 </template>
 
 <script>
+import data from '@/data/data.json'
 export default {
     metaInfo: {
       title: 'Work List'
+    },
+    data() {
+      return {
+        works: data.data.works
+      }
     }
+
 }
 </script>
 
 <style>
 
-</style>
+</style> 
