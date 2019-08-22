@@ -2,10 +2,10 @@
   <div>
     <ul>
         <li>
-            <g-link to="/works/work-one">Work One</g-link>
+            <g-link to="/works/gemstone">Work One</g-link>
         </li>
         <li>
-            <g-link to="/works/work-two">Work Two</g-link>
+            <g-link to="/works/swi">Work Two</g-link>
         </li>
     </ul>
       

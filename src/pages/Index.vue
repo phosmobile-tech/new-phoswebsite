@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section>
+    <section class="container">
       <h1>SOLUTIONS BY DESIGN</h1>
 
       <span>We build identities and experiences to <br> elevate and empower organizations.</span>
@@ -13,17 +13,17 @@
       <section>
       <div class="img-container">
         <ul class="work-list">
-          <li>
-            <g-link to="/works/work-two"><img src="http://successwithinint.com/wp-content/uploads/2019/05/SWI-Logo-768x474.jpg" alt="" class="img"></g-link>
+          <li class="img-list">
+            <g-link to="/works/swi"><img src="http://successwithinint.com/wp-content/uploads/2019/05/SWI-Logo-768x474.jpg" alt="" class="img"></g-link>
           </li>
-          <li>
-            <g-link to="/works/work-one"><picture><img src="http://gemstoneijmb.com/images/svg/logo.svg" alt="" class="img"></picture> </g-link>
+          <li class="img-list">
+            <g-link to="/works/gemstone"><picture><img src="http://gemstoneijmb.com/images/svg/logo.svg" alt="" class="img"></picture> </g-link>
           </li>
           
-          <li>
+          <!-- <li class="img-list">
             <g-link to="/works/work-one"><img src="/works/swi.jpg" alt="" class="img"></g-link>
-          </li>
-          <li>
+          </li> -->
+          <li class="img-list">
             <g-link to="/works">See more works</g-link>
           </li>
         </ul>
@@ -122,7 +122,7 @@ export default {
 
 h1 {
   font-family: 'Barlow Condensed';
-  font-size: 80px;
+  font-size: 90px;
   color: #2e3c40;
   margin-top: 12%;
 }
@@ -189,17 +189,16 @@ p {
   width: 400px;
 }
 
-.container {
-  margin-top: 15%;
-}
-
 .work-list {
     display: flex;
     list-style-type: none;
-    width: 50%;
-    
+    width: fit-content;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
 }
-
+.img-list {
+  margin-right: 20px;
+}
 .content {
   margin-top: 5%;
 }

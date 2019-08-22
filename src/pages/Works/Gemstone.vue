@@ -1,8 +1,8 @@
 <template>
   <div>
     <Layout>
-        <h1>Work One</h1>
-        <section class="section">
+      <section class="container">
+        <h1>Gemstone</h1>
           <aside>
             <h4>THE CHALLENGE</h4>
           </aside>
@@ -19,7 +19,7 @@
             <g-link to="">Development Soltions</g-link>
           </aside>
         </section>
-        <section>
+        <section class="container">
           <p>We helped Outreach tell their story through a bold new identity and a robust online experience.</p>
         </section>
     

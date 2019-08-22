@@ -14,7 +14,9 @@
         <g-link class="nav__link" to="/contact">Contact Us</g-link>
       </nav>
     </header>
-    <slot/>
+    <div class="contain-all">
+      <slot/>
+    </div>
     <footer class="footer">All Rights Reserved | phosmobile.com</footer>
   </div>
 </template>
@@ -32,25 +34,22 @@ query {
 body {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   margin:0;
-  padding-left: 80px;
-  /* line-height: 1.5; */
-  width: 1000px;
+  padding: 0;
 }
 
 .layout {
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 100%;
 }
 
 .header {
   font-family: 'Barlow Condensed';
   text-transform: uppercase;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-top: 20px;
-  height: 80px;
+  height: 80px; 
 }
 
 .nav__link {
@@ -58,6 +57,16 @@ body {
   text-decoration: none;
 }
 
+.container {
+  max-width: 90%;
+  padding-left: 100px;
+}
+
+/* .contain-all {
+    max-width: 80%;
+    justify-content: space-around;
+  align-items: center;
+} */
 .footer {
     margin-top: 70%;
 }
