@@ -6,5 +6,21 @@
 
 module.exports = {
   siteName: 'PhosMobile',
-  plugins: []
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'works/**/*',
+        typeName: 'Post',
+        remark: {
+          // remark options
+        }
+      }
+    }
+  ],
+  transformers: {
+    remark: {
+      // global remark options
+    }
+  }
 }

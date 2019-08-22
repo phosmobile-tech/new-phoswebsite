@@ -68,7 +68,7 @@
       <section class="container">
         <div class="img-container">
           <span class="logo">#LOGOS</span>
-        <ul class="work-list">
+        <!-- <ul class="work-list">
           <li>
             <g-link to="/works"><img src="../phos-logo.png" alt="" class="img"></g-link>
           </li>
@@ -78,7 +78,7 @@
           <li>
             <g-link to="/works"><img src="../phos-logo.png" alt="" class="img"></g-link>
           </li>
-        </ul>
+        </ul> -->
       </div>
       </section>
 

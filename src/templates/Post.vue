@@ -1,27 +1,15 @@
 <template>
-    <DynamicLayout>
+    <Layout>
+        <div v-html="$page.post.title" />
         <div v-html="$page.post.content" />
-    </DynamicLayout>
+    </Layout>
 </template>
-
-<page-query>
-query {
-  allPost {
-    edges {
-      node {
-        title
-        content
-      }
-    }
-  }
-}
-</page-query>
 
 
 <script>
 export default {
-    metaInfo() {
-        return {
+    data() {
+      return {
             title: this.$page.post.title
         }
     }

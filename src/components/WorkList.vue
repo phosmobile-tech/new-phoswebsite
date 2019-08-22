@@ -3,7 +3,7 @@
     <ul>
         <li>
           <div  v-for="work in works" :key="work.id">
-            <g-link :to="'/works/'+work.title">{{work.title}}</g-link>
+            <g-link :to="'/works/'+work.slug">{{work.title}}</g-link>
             </div>
         </li>
     </ul>
