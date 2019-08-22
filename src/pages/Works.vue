@@ -1,7 +1,6 @@
 <template>
   <div>
       <Layout>
-
         <WorkList></WorkList>
       </Layout>
 

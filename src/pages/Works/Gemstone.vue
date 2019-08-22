@@ -2,7 +2,7 @@
   <div>
     <Layout>
       <section class="container">
-        <h1>Gemstone</h1>
+        <h1>{{work.title}}</h1>
           <aside>
             <h4>THE CHALLENGE</h4>
           </aside>        

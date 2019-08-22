@@ -4,17 +4,21 @@
             {
                 "id": 1,
                 "slug": "gemstone",
-                "title": "Gemstone"
+                "title": "Gemstone",
+                "img": "./works/gemstone.jpg",
+                "path": "/works/gemstone"
             },
             {
                 "id": 2,
-                "slug": "swi",
-                "title": "Success Within International"
+                "slug": "/work/swi",
+                "title": "Success Within International",
+                "img-url": "http://successwithinint.com/wp-content/uploads/2019/05/SWI-Logo-768x474.jpg"
             },
             {
-                "id": 2,
+                "id": 3,
                 "slug": "daisy",
-                "title": "Daisy Confectioneries"
+                "title": "Daisy Confectioneries",
+                "img-url": "http://successwithinint.com/wp-content/uploads/2019/05/SWI-Logo-768x474.jpg"
             }
         ],
         "products": [
@@ -43,6 +47,32 @@
             {
                 "id": 2,
                 "title": "daisy"
+            }
+        ],
+        "static": [
+            {
+                "title": "The Challenge"
+            },
+            {
+                "title": "Our Approach"
+            },
+            {
+                "title": "Branding"
+            },
+            {
+                "title": "Communication"
+            },
+            {
+                "title": "Content Strategy & UI/UX Design"
+            },
+            {
+                "title": "Development"
+            },
+            {
+                "title": "Photography"
+            },
+            {
+                "title": "Scope of Work"
             }
         ]
     }

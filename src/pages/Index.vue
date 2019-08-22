@@ -16,19 +16,19 @@
       <section>
       <div class="img-container">
         <ul class="work-list">
-          <li class="img-list">
-            <g-link to="/works/swi"><img src="http://successwithinint.com/wp-content/uploads/2019/05/SWI-Logo-768x474.jpg" alt="" class="img"></g-link>
+          <li class="img-list" v-for="work in works" :key="work.id">
+            <g-link :to="'/works/'+work.slug"><g-image :src="work.img" class="img"/></g-link>
           </li>
-          <li class="img-list">
+          <!-- <li class="img-list">
             <g-link to="/works/gemstone"><picture><img src="http://gemstoneijmb.com/images/svg/logo.svg" alt="" class="img"></picture> </g-link>
-          </li>
+          </li> -->
           
           <!-- <li class="img-list">
             <g-link to="/works/work-one"><img src="/works/swi.jpg" alt="" class="img"></g-link>
           </li> -->
-          <li class="img-list">
+          <!-- <li class="img-list">
             <g-link to="/works">See more works</g-link>
-          </li>
+          </li> -->
         </ul>
       </div>
       </section>
@@ -108,13 +108,18 @@
 </template>
 
 <script>
+import data from '@/data/data.json'
 // import works from '../'
 // import GenList from '../components/GenList'
 export default {
   metaInfo: {
     title: 'Hello, world!'
   },
-  props: ['works']
+  data() {
+      return {
+        works: data.data.works
+      }
+    }
 }
 </script>
 
