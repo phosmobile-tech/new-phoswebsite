@@ -1,25 +1,35 @@
 <template>
-    <Layout>
-        <div v-for="work in works" :key="work.id">
-          <h2>{{ work.title }}</h2>
-            <!-- <div :title="work.title" /> -->
-            <div v-html="work.content" />
-        </div>
-    </Layout>
+  <Layout>
+      <!-- <div :title="$page.datawork.title" />
+    <div v-html="$page.datawork.content" />
+    <h2>{{$page.datawork.title}}</h2> -->
+    <!-- <div v-if="edge in $page.datawork.edges">
+      <h2>{{ edge.node.title }}</h2>
+    </div> -->
+    <section class="container">
+       <div :title="$page.post.title" />
+    <div v-html="$page.post.content" />
+      <h1>{{$page.post.content}}</h1>
+    </section>
+  </Layout>
 </template>
 
-<script>
-import data from '@/data/data.json'
+<page-query>
+query Post($path: String!) {
+  post: post(path: $path) {
+    id,
+    title,
+    content
+  }
+}
+</page-query>
 
+<script>
 export default {
-    data() {
-      return {
-        works: data.data.works
-      }
+    metaInfo() {
+        return {
+           title: this.$page.post.title
+        }
     }
 }
 </script>
-
-<style>
-
-</style>

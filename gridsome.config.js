@@ -15,7 +15,7 @@ module.exports = {
       options: {
         // route: 'work/:slug',
         path: 'works/**/*',
-        typeName: 'Post',
+        typeName: 'DataWork',
         remark: {
           // remark options
         }

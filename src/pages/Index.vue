@@ -17,7 +17,7 @@
       <div class="img-container">
         <ul class="work-list">
           <li class="img-list" v-for="work in works" :key="work.id">
-            <g-link :to="'/works/'+work.slug"><g-image :src="work.img" class="img"/><div v-html="work.title" /></g-link>
+            <g-link :to="work.path"><g-image :src="work.img" class="img"/><div v-html="work.title" /></g-link>
           </li>
         </ul>
         <!-- <ul class="work-list">

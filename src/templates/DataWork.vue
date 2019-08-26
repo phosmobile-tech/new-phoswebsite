@@ -1,20 +1,24 @@
 <template>
   <Layout>
-      <div :title="$page.datawork.title" />
+      <!-- <div :title="$page.datawork.title" />
     <div v-html="$page.datawork.content" />
+    <h2>{{$page.datawork.title}}</h2> -->
+    <!-- <div v-if="edge in $page.datawork.edges">
+      <h2>{{ edge.node.title }}</h2>
+    </div> -->
+    <section class="container">
+       <div v-html="$page.datawork.title" />
+    <div v-html="$page.datawork.content" />
+    </section>
   </Layout>
 </template>
 
 <page-query>
-query dataWork {
-  datawork: allDataWork {
-    edges{
-      node{
-          id,
-        title,
-        content
-      }
-    }
+query DataWork($path: String!) {
+  datawork: dataWork(path: $path) {
+    id,
+    title,
+    content
   }
 }
 </page-query>
@@ -23,7 +27,7 @@ query dataWork {
 export default {
     metaInfo() {
         return {
-            title: this.$page.datawork.title
+           title: this.$page.datawork.title
         }
     }
 }

@@ -16,7 +16,7 @@ module.exports = function (api) {
 }
 
 // const works = require(data in './src/data/data.json')
-// JSON
+// WORK.JSON FILE
 const posts = require('./src/data/work.json')
 
 module.exports = function (api) {
@@ -37,6 +37,27 @@ module.exports = function (api) {
     }
   })
 }
+
+
+// DATA.JSON FILE
+// const data = require('./src/data/data.json')
+
+// module.exports = function (api) {
+//   api.loadSource(store => {
+//     const contentType = store.addContentType({
+//       typeName: 'Post'
+//     })
+
+//     for (const item of data.work) {
+//       contentType.addNode({
+//         id: item.id,
+//         title: item.title,
+//         path: item.work.path,
+//         content: item.content
+//       })
+//     }
+//   })
+// }
 
 // module.exports = function (api) {
 //   api.loadSource(store => {

@@ -3,14 +3,14 @@
     <ul>
         <li>
           <div v-for="work in works" :key="work.id">
-            <g-link :to="'/works/'+work.slug"><div :content="work.content">{{work.title}}</div></g-link>
+            <g-link :to="work.path">{{work.title}}</g-link>
           </div>
         </li>
     </ul>
 
     <ul>
       <li v-for="edge in $page.datawork.edges" :key="edge.node.id">
-          {{ edge.node.title }}
+          <g-link :to="edge.node.path">{{ edge.node.title }}</g-link>
       </li>
     </ul>
 
@@ -25,19 +25,7 @@
   </div>
 </template>
 
-<static-query>
-query dataWork {
-  datawork: allDataWork {
-    edges{
-      node{
-        id
-        title
-        path
-      }
-    }
-  }
-}
-</static-query>
+
 
 <script>
 import data from '@/data/data.json'
@@ -50,9 +38,6 @@ export default {
       return {
         works: data.data.works
       }
-    },
-    props: {
-      datawork
     }
 
 }

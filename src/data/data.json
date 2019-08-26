@@ -1,23 +1,23 @@
-{
-     "data": {
+[
+    {
         "works": [
             {
                 "id": 1,
-                "slug": "work-gemstone",
+                "path": "/works/gemstone",
                 "name": "Gemstone",
                 "title": "Gemstone",
                 "img": "http://gemstoneijmb.com/images/svg/logo.svg"
             },
             {
                 "id": 2,
-                "slug": "work-swint",
+                "path": "/works/swint",
                 "name": "Success Within International",
                 "title": "Success Within International",
                 "img": "http://successwithinint.com/wp-content/uploads/2019/05/SWI-Logo-768x474.jpg"
             },
             {
                 "id": 3,
-                "slug": "work-daisy",
+                "path": "/works/daisy",
                 "name": "Daisy Confectioneries",
                 "title": "Daisy Confectioneries",
                 "img": "http://successwithinint.com/wp-content/uploads/2019/05/SWI-Logo-768x474.jpg"
@@ -26,56 +26,36 @@
         "products": [
             {
                 "id": 1,
-                "title": "xpense buddy"
+                "title": "xpense buddy",
+                "path": "/works/gemstone"
             },
             {
                 "id": 2,
-                "title": "muteapp"
+                "title": "muteapp",
+                "path": "/works/gemstone"
             },
             {
                 "id": 2,
-                "title": "daisy"
+                "title": "daisy",
+                "path": "/works/gemstone"
             }
         ],
         "careers": [
             {
                 "id": 1,
-                "title": "gemstone"
+                "title": "gemstone",
+                "path": "/works/gemstone"
             },
             {
                 "id": 2,
-                "title": "swi"
+                "title": "swi",
+                "path": "/works/gemstone"
             },
             {
                 "id": 2,
-                "title": "daisy"
-            }
-        ],
-        "static": [
-            {
-                "title": "The Challenge"
-            },
-            {
-                "title": "Our Approach"
-            },
-            {
-                "title": "Branding"
-            },
-            {
-                "title": "Communication"
-            },
-            {
-                "title": "Content Strategy & UI/UX Design"
-            },
-            {
-                "title": "Development"
-            },
-            {
-                "title": "Photography"
-            },
-            {
-                "title": "Scope of Work"
+                "title": "daisy",
+                "path": "/works/gemstone"
             }
         ]
     }
-}
+]
