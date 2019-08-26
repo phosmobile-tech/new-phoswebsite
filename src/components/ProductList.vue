@@ -1,25 +1,28 @@
 <template>
   <div>
     <ul>
-        <li>
-            <g-link to="/products/product-one">Product One</g-link>
-        </li>
-        <li>
-            <g-link to="/products/product-two">Product Two</g-link>
-        </li>
+      <li v-for="edge in $page.product.edges" :key="edge.node.id">
+          <g-link :to="edge.node.path">{{ edge.node.title }}</g-link>
+      </li>
     </ul>
-      
   </div>
 </template>
 
 <script>
+import work from '@/data/product.json'
 export default {
     metaInfo: {
       title: 'Product List'
+    },
+    data() {
+      return {
+        works: data.data.works
+      }
     }
+
 }
 </script>
 
 <style>
 
-</style>
+</style> 
