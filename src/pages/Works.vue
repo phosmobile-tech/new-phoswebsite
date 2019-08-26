@@ -2,6 +2,7 @@
   <div>
       <Layout>
         <WorkList></WorkList>
+        <!-- <DataWork></DataWork> -->
       </Layout>
 
       
@@ -10,12 +11,14 @@
 
 <script>
 import WorkList from '../components/WorkList'
+// import DataWork from '../templates/DataWork'
 export default {
    metaInfo: {
     title: 'Works'
   },
   components: {
-     WorkList
+     WorkList,
+    //  DataWork
   }
 }
 </script>

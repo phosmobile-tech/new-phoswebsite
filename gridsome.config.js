@@ -14,8 +14,8 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         // route: 'work/:slug',
+        path: 'works/**/*',
         typeName: 'Post',
-        path: 'works/work-*',
         remark: {
           // remark options
         }

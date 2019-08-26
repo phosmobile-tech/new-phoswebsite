@@ -17,21 +17,42 @@ module.exports = function (api) {
 
 // const works = require(data in './src/data/data.json')
 // JSON
-// const works = require('./src/data/data.json')
+const posts = require('./src/data/work.json')
+
+module.exports = function (api) {
+  api.loadSource(store => {
+    const contentType = store.addContentType({
+      typeName: 'DataWork'
+    })
+
+    for (const item of posts) {
+      contentType.addNode({
+        id: item.id,
+        title: item.title,
+        path: item.path,
+        fields: {
+          content: item.content
+        }
+      })
+    }
+  })
+}
 
 // module.exports = function (api) {
 //   api.loadSource(store => {
 //     const contentType = store.addContentType({
-//       typeName: 'works',
-//       route: 'works/'+works.slug
+//       typeName: 'DataWork',
+//       route: '/works/:id'
 //     })
 
-//     for (const work of works) {
+//     for (const item of works) {
 //       contentType.addNode({
 //         id: work.id,
 //         title: work.title,
-//         content: work.content,
-//         path: 'works/work-*'
+//         path: '/works/'+work.slug,
+//         fields: {
+//           content: work.content
+//         }
 //       })
 //     }
 //   })
