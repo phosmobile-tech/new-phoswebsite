@@ -16,20 +16,15 @@
       <section>
       <div class="img-container">
         <ul class="work-list">
-          <!-- <li class="img-list" v-for="work in works" :key="work.id">
-            <g-link :to="'/works/'+work.slug"><g-image :src="work.img" class="img"/></g-link>
-          </li> -->
-          <!-- <li class="img-list">
-            <g-link to="/works/gemstone"><picture><img src="http://gemstoneijmb.com/images/svg/logo.svg" alt="" class="img"></picture> </g-link>
-          </li> -->
-          
-          <!-- <li class="img-list">
-            <g-link to="/works/work-one"><img src="/works/swi.jpg" alt="" class="img"></g-link>
-          </li> -->
-          <!-- <li class="img-list">
-            <g-link to="/works">See more works</g-link>
-          </li> -->
+          <li class="img-list" v-for="work in works" :key="work.id">
+            <g-link :to="'/works/'+work.slug"><g-image :src="work.img" class="img"/><div v-html="work.title" /></g-link>
+          </li>
         </ul>
+        <!-- <ul class="work-list">
+          <li class="img-list" v-for="work in works" :key="work.id">
+            <g-link to="/post"><g-image :src="work.img" class="img"/><div v-html="work.title" /></g-link>
+          </li>
+        </ul> -->
       </div>
       </section>
 
@@ -198,7 +193,7 @@ h6 {
 }
 
 .img {
-  width: 400px;
+  width: 300px;
 }
 
 .work-list {

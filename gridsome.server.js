@@ -14,3 +14,25 @@ module.exports = function (api) {
     // Use the Pages API here: https://gridsome.org/docs/pages-api
   })
 }
+
+// const works = require(data in './src/data/data.json')
+// JSON
+// const works = require('./src/data/data.json')
+
+// module.exports = function (api) {
+//   api.loadSource(store => {
+//     const contentType = store.addContentType({
+//       typeName: 'works',
+//       route: 'works/'+works.slug
+//     })
+
+//     for (const work of works) {
+//       contentType.addNode({
+//         id: work.id,
+//         title: work.title,
+//         content: work.content,
+//         path: 'works/work-*'
+//       })
+//     }
+//   })
+// }

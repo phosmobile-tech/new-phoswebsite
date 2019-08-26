@@ -1,21 +1,24 @@
- {
+{
      "data": {
         "works": [
             {
                 "id": 1,
                 "slug": "work-gemstone",
+                "name": "Gemstone",
                 "title": "Gemstone",
-                "img": "./images/gemstone.jpg"
+                "img": "http://gemstoneijmb.com/images/svg/logo.svg"
             },
             {
                 "id": 2,
                 "slug": "work-swint",
+                "name": "Success Within International",
                 "title": "Success Within International",
                 "img": "http://successwithinint.com/wp-content/uploads/2019/05/SWI-Logo-768x474.jpg"
             },
             {
                 "id": 3,
                 "slug": "work-daisy",
+                "name": "Daisy Confectioneries",
                 "title": "Daisy Confectioneries",
                 "img": "http://successwithinint.com/wp-content/uploads/2019/05/SWI-Logo-768x474.jpg"
             }
