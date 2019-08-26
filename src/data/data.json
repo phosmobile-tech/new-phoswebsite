@@ -3,19 +3,19 @@
         "works": [
             {
                 "id": 1,
-                "slug": "gemstone",
+                "slug": "work-gemstone",
                 "title": "Gemstone",
                 "img": "./images/gemstone.jpg"
             },
             {
                 "id": 2,
-                "slug": "swint",
+                "slug": "work-swint",
                 "title": "Success Within International",
                 "img": "http://successwithinint.com/wp-content/uploads/2019/05/SWI-Logo-768x474.jpg"
             },
             {
                 "id": 3,
-                "slug": "daisy",
+                "slug": "work-daisy",
                 "title": "Daisy Confectioneries",
                 "img": "http://successwithinint.com/wp-content/uploads/2019/05/SWI-Logo-768x474.jpg"
             }

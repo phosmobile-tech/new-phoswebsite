@@ -15,7 +15,7 @@ module.exports = {
       options: {
         // route: 'work/:slug',
         typeName: 'Post',
-        path: 'works/*',
+        path: 'works/work-*',
         remark: {
           // remark options
         }

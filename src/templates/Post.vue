@@ -8,8 +8,9 @@
 </template>
 
 
+
 <script>
-import works from '@/data/data.json'
+import data from '@/data/data.json'
 
 export default {
     data() {
