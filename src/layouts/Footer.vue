@@ -1,7 +1,7 @@
 <template>
   <div>
      <div>
-        <img src="../phos-logo.png" alt="phosmobile" width="50px"/> 
+        <!-- <img src="../phos-logo.png" alt="phosmobile" width="50px"/>  -->
         
       </div> 
   </div>

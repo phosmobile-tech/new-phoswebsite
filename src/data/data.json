@@ -5,22 +5,19 @@
                 "id": 1,
                 "slug": "gemstone",
                 "title": "Gemstone",
-                "img": "./images/gemstone.jpg",
-                "path": "/single-work"
+                "img": "./images/gemstone.jpg"
             },
             {
                 "id": 2,
-                "slug": "/work/swi",
+                "slug": "swint",
                 "title": "Success Within International",
-                "img": "http://successwithinint.com/wp-content/uploads/2019/05/SWI-Logo-768x474.jpg",
-                "path": "/worksswi"
+                "img": "http://successwithinint.com/wp-content/uploads/2019/05/SWI-Logo-768x474.jpg"
             },
             {
                 "id": 3,
                 "slug": "daisy",
                 "title": "Daisy Confectioneries",
-                "img": "http://successwithinint.com/wp-content/uploads/2019/05/SWI-Logo-768x474.jpg",
-                "path": "/works/daisy"
+                "img": "http://successwithinint.com/wp-content/uploads/2019/05/SWI-Logo-768x474.jpg"
             }
         ],
         "products": [

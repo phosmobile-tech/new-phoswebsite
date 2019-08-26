@@ -16,9 +16,9 @@
       <section>
       <div class="img-container">
         <ul class="work-list">
-          <li class="img-list" v-for="work in works" :key="work.id">
+          <!-- <li class="img-list" v-for="work in works" :key="work.id">
             <g-link :to="'/works/'+work.slug"><g-image :src="work.img" class="img"/></g-link>
-          </li>
+          </li> -->
           <!-- <li class="img-list">
             <g-link to="/works/gemstone"><picture><img src="http://gemstoneijmb.com/images/svg/logo.svg" alt="" class="img"></picture> </g-link>
           </li> -->

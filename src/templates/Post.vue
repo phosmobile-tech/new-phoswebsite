@@ -1,17 +1,21 @@
 <template>
     <Layout>
-        <div v-html="$page.post.title" />
-        <div v-html="$page.post.content" />
+        <div v-for="work in works" :key="work.id">
+            <div :title="work.title" />
+            <div v-html="work.content" />
+        </div>
     </Layout>
 </template>
 
 
 <script>
+import works from '@/data/data.json'
+
 export default {
     data() {
       return {
-            title: this.$page.post.title
-        }
+        works: data.data.works
+      }
     }
 }
 </script>
