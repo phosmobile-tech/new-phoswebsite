@@ -40,7 +40,7 @@ module.exports = function (api) {
 
 
 // DATA.JSON FILE
-// const data = require('./src/data/data.json')
+// const product = require('./src/data/product.json')
 
 // module.exports = function (api) {
 //   api.loadSource(store => {
@@ -48,11 +48,11 @@ module.exports = function (api) {
 //       typeName: 'Post'
 //     })
 
-//     for (const item of data.work) {
+//     for (const item of product) {
 //       contentType.addNode({
 //         id: item.id,
 //         title: item.title,
-//         path: item.work.path,
+//         path: item.path,
 //         content: item.content
 //       })
 //     }
