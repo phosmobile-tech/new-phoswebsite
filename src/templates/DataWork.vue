@@ -1,14 +1,8 @@
 <template>
   <Layout>
-      <!-- <div :title="$page.datawork.title" />
-    <div v-html="$page.datawork.content" />
-    <h2>{{$page.datawork.title}}</h2> -->
-    <!-- <div v-if="edge in $page.datawork.edges">
-      <h2>{{ edge.node.title }}</h2>
-    </div> -->
     <section class="container">
-       <div v-html="$page.datawork.title" />
-    <div v-html="$page.datawork.content" />
+       <h1><div v-html="$page.datawork.title" /></h1>
+    <div class="text"><div v-html="$page.datawork.content" /></div>
     </section>
   </Layout>
 </template>

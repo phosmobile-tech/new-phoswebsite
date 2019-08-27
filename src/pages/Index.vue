@@ -2,13 +2,12 @@
   <Layout>
     <section class="container">
       <h1>SOLUTIONS BY DESIGN</h1>
-
       <span class="text">We build identities and experiences to <br> elevate and empower organizations.</span>
       <div class="span-text">
         <span class="sub-text">HELPING OUR PARTNERS MOVE FORWARD THROUGH</span>
         <span class="sub-link"><g-link to="">Discovery & Strategy,</g-link><g-link to="">Branding,</g-link> <g-link to="">Interactive,</g-link><br> <g-link to="">Communications,</g-link> <g-link to="">Creative Production and</g-link><br> <g-link to="">Development Solutions</g-link></span>
       </div>
-      </section>
+    </section>
 
     <section class="container">
     </section>
@@ -16,11 +15,11 @@
       <div class="img-container">
         <ul class="work-list">
           <li class="img-list" v-for="edge in $page.datawork.edges" :key="edge.node.id">
-            <g-link :to="edge.node.path"><g-image :src="edge.node.img" class="img"/><span>{{ edge.node.title }}</span></g-link>
+            <g-link :to="edge.node.path"><g-image :src="edge.node.img" class="img"/><span class="img-title">{{ edge.node.title }}</span></g-link>
           </li>
         </ul>
       </div>
-      </section>
+    </section>
 
       <section class="container">
           <h2>LET’S BUILD SOMETHING GREAT. TOGETHER.</h2>
@@ -57,21 +56,10 @@
       <section class="container">
         <div class="img-container">
           <span class="logo">#LOGOS</span>
-        <!-- <ul class="work-list">
-          <li>
-            <g-link to="/works"><img src="../phos-logo.png" alt="" class="img"></g-link>
-          </li>
-          <li>
-            <g-link to="/works"><img src="../phos-logo.png" alt="" class="img"></g-link>
-          </li>
-          <li>
-            <g-link to="/works"><img src="../phos-logo.png" alt="" class="img"></g-link>
-          </li>
-        </ul> -->
       </div>
       </section>
 
-      <section class="article-container">
+      <!-- <section class="article-container">
         <ul class="article-list">
           <li class="categories">
             <g-link to="" class="category-text"></g-link>
@@ -91,7 +79,41 @@
             
           </li>
         </ul>
-      </section>
+      </section> -->
+
+      <nav class="articles">
+        <div class="contain">
+          <ul>
+            <li class="article-list">
+              <g-link to=""></g-link>
+              <div class="inner-content">
+                <p class="categories">CULTURE, OUR TEAM</p>
+                <h3>OUT OF FOCUS: CASHIERS</h3>
+                <h6>BY KELLIE GROOVER</h6>
+              </div>
+            </li>
+
+            <li>
+              <g-link to=""></g-link>
+              <div class="inner-content">
+                <p class="categories">CULTURE, OUR TEAM</p>
+                <h3>OUT OF FOCUS: CASHIERS</h3>
+                <h6>BY KELLIE GROOVER</h6>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="footer-spacer">
+        <footer>
+          <g-link></g-link>
+          <div class="footer-content">
+            <h2>JUST REACH OUT! <span>Let's Chat.</span></h2>
+          </div>
+          <div class="footer-secondary"></div>
+        </footer>
+      </div>
   
   </Layout>
 </template>
@@ -102,7 +124,8 @@ query dataWork {
     edges{
       node{
         title,
-        img
+        img,
+        path
       }
     }
   }
@@ -110,18 +133,15 @@ query dataWork {
 </page-query>
 
 <script>
-import data from '@/data/data.json'
-// import works from '../'
-// import GenList from '../components/GenList'
 export default {
   metaInfo: {
     title: 'Hello, world!'
-  },
-  data() {
-      return {
-        works: data.data.works
-      }
-    }
+  }
+  // data() {
+  //     return {
+  //       works: data.data.works
+  //     }
+  //   }
 }
 </script>
 
@@ -135,7 +155,7 @@ export default {
 
 h1 {
   font-family: 'Barlow Condensed';
-  font-size: 90px;
+  font-size: 80px;
   color: #2e3c40;
   margin-top: 12%;
 }
@@ -166,22 +186,23 @@ h6 {
   font-family: 'Montserrat', sans-serif;
   color: #2e3c40;
   line-height: 2;
-  font-size: 18px;
+  font-size: 15px;
   
 }
+
 .sub-text {
   font-family: 'Barlow Condensed';
   float: right;
-  margin-right: 265px;
+  margin-right: 150px;
   margin-bottom: 15px;
   margin-top: -15px;
   font-size: 20px;
 }
+
 .sub-link {
   font-size: 20px;
   float: right;
-  margin-right: 235px; 
-  
+  margin-right: 120px; 
 } 
 
 .sub-link a {
@@ -200,7 +221,8 @@ h6 {
 }
 
 .img {
-  width: 300px;
+  width: 250px;
+  display: inline-block;
 }
 
 .work-list {
@@ -213,6 +235,11 @@ h6 {
 .img-list {
   margin-right: 20px;
 }
+
+/* .img-title {
+  text-decoration: none;
+} */
+
 .content {
   margin-top: 5%;
 }
@@ -233,6 +260,7 @@ h6 {
 .aside-ul-left {
   list-style-type: none;
   width: 25%;
+  padding-inline-start: 0px;
 }
 
 .content-right {
@@ -249,42 +277,71 @@ h6 {
   text-align: center;
 }
 
-.categories {
-    width: 50%;
-    position: relative;
-    display: inline-block;
-    /* padding: 10px 7px; */
+.contain {
+  max-width: 80%;
+  margin: 0 auto;
+  border-top: 1px solid red;
 }
 
-.category-text {
-  text-decoration: none;
+nav.articles ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.125em;
+  /* padding-inline-start: 100px; */
+}
+
+nav.articles ul li {
+  display: inline-block;
+  position: relative;
+  padding: 7% 4%;
+  cursor: pointer;
   /* display: block; */
 }
 
 .article-list {
-  list-style-type: none;
-  border-top: 1px solid red;
-  /* display: contents; */
-}
-
-.article-top {
-  font-family: 'Barlow Condensed';
-  font-size: 18px;
-}
-
-.article-left {
   border-right: 1px solid red;
+}
+
+nav.articles ul li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  /* height: 100%; */
+}
+
+.inner-content {
+  pointer-events: none;
+  transition: transform .3s ease;
+}
+
+footer {
+  position: fixed;
+  z-index: 0;
+  bottom: 0;
+  width: 100%;
+  background: #ff5c5c;
   padding-top: 0;
+  border: 0 solid white;
+  border-top: 0px;
+  transition: border .3s ease, padding .3s ease;
 }
 
-.article-container {
-  margin-top: 15%;
-  /* display: block; */
+.footer-spacer{
+  position: relative;
+  z-index: -1;
+  height: 160px;
 }
 
-/* .article-container {
-  display: block;
-} */
-
+footer .footer-content {
+  position: fixed;
+  z-index: -1;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateX(-50%);
+  transition: bottom .3s ease;
+}
 
 </style>

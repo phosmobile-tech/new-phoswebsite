@@ -15,8 +15,15 @@
 	},
 	{
 		"id": 3,
-        "title": "Daisy Confectioneries",
+        "title": "Daisy Confectionery",
         "path": "/works/daisy",
+        "content": "StoryBots is both a digital learning platform and Emmy Award-winning Netflix series for children centered around curious creatures who live in the world beneath our screens. Armed with a clever concept and product, the StoryBots team approached us to elevate their current design system. Our task was to bring a level of consistency to the StoryBots brand as they grew their reach across web, print, and digital media."
+    },
+    {
+		"id": 4,
+        "title": "Marvel",
+        "path": "/works/marvel",
+        "img": "http://gemstoneijmb.com/images/svg/logo.svg",
         "content": "StoryBots is both a digital learning platform and Emmy Award-winning Netflix series for children centered around curious creatures who live in the world beneath our screens. Armed with a clever concept and product, the StoryBots team approached us to elevate their current design system. Our task was to bring a level of consistency to the StoryBots brand as they grew their reach across web, print, and digital media."
 	}
 ]

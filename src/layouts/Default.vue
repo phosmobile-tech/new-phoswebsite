@@ -15,7 +15,7 @@
       </nav>
     </header>
     <slot/>
-    <footer class="footer">All Rights Reserved | phosmobile.com</footer>
+    <!-- <footer class="footer">All Rights Reserved | phosmobile.com</footer> -->
   </div>
 </template>
 
@@ -36,8 +36,9 @@ body {
 }
 
 .layout {
-  margin: 0 auto;
-  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
 }
 
 .header {
@@ -62,16 +63,10 @@ body {
   max-width: 1200px;
   padding-inline-start: 160px;
   margin-top: 15%;
-  /* padding-inline-end: 40px; */
-  /* padding-left: 100px; */
+  padding-inline-end: 160px;
 }
 
-/* .contain-all {
-    max-width: 80%;
-    justify-content: space-around;
-  align-items: center;
-} */
-.footer {
+/* .footer {
     margin-top: 70%;
-}
+} */
 </style>
