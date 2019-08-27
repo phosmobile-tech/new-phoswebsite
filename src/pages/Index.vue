@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    <section class="main-section">
     <section class="container">
       <h1>SOLUTIONS BY DESIGN</h1>
       <span class="text">We build identities and experiences to <br> elevate and empower organizations.</span>
@@ -105,6 +106,7 @@
         </div>
       </nav>
       </section>
+      </section>
 
       <section class="footer-section">
       <div class="footer-spacer"></div>
@@ -116,7 +118,7 @@
           <div class="footer-secondary">
             <div class="footer-contain">
               <ul class="footer-info">
-                <li>&copy PhosMobile</li>
+                <li> &copy PhosMobile</li>
                 <li>Contact Us</li>
               </ul>
               <ul class="footer-social">
@@ -231,6 +233,11 @@ h6 {
   line-height: 1.5;
 }
 
+.main-section {
+  z-index: 1000;
+  position: relative;
+}
+
 .img-container {
   margin-top: 15%;
 }
@@ -339,7 +346,9 @@ nav.articles ul li a {
 
 footer {
   position: fixed;
-  z-index: 0;
+  height: 20em;
+  /* left: 0;
+  z-index: 0; */
   bottom: 0;
   width: 100%;
   padding-top: 0;
@@ -349,15 +358,16 @@ footer {
 }
 
 .footer-spacer{
+  /* background: #ff5c5c; */
   position: relative;
   z-index: -1;
-  height: 50em;
+  height: 32em;
 }
 
 footer .footer-content {
   /* position: fixed; */
   z-index: -1;
-  left: 50%;
+  /* left: 50%; */
   width: 100%;
   text-align: center;
   /* transform: translateX(-50%); */
@@ -365,7 +375,13 @@ footer .footer-content {
 }
 .footer-text{
   color: white;
+  line-height: 0;
+  margin-bottom: 5em;
   /* margin-top: -50px; */
+}
+
+.footer-contain {
+  text-align: center;
 }
 
 .footer-contain ul {
