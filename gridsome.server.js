@@ -30,6 +30,7 @@ module.exports = function (api) {
         id: item.id,
         title: item.title,
         path: item.path,
+        img: item.img,
         fields: {
           content: item.content
         }

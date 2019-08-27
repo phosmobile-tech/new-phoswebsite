@@ -11,20 +11,14 @@
       </section>
 
     <section class="container">
-      <!-- <GenList /> -->
     </section>
       <section>
       <div class="img-container">
         <ul class="work-list">
-          <li class="img-list" v-for="work in works" :key="work.id">
-            <g-link :to="work.path"><g-image :src="work.img" class="img"/><div v-html="work.title" /></g-link>
+          <li class="img-list" v-for="edge in $page.datawork.edges" :key="edge.node.id">
+            <g-link :to="edge.node.path"><g-image :src="edge.node.img" class="img"/><span>{{ edge.node.title }}</span></g-link>
           </li>
         </ul>
-        <!-- <ul class="work-list">
-          <li class="img-list" v-for="work in works" :key="work.id">
-            <g-link to="/post"><g-image :src="work.img" class="img"/><div v-html="work.title" /></g-link>
-          </li>
-        </ul> -->
       </div>
       </section>
 
@@ -101,6 +95,19 @@
   
   </Layout>
 </template>
+
+<page-query>
+query dataWork {
+  datawork: allDataWork {
+    edges{
+      node{
+        title,
+        img
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 import data from '@/data/data.json'
