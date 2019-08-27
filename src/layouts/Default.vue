@@ -64,6 +64,7 @@ body {
   padding-inline-start: 160px;
   margin-top: 15%;
   padding-inline-end: 160px;
+  z-index: 10;
 }
 
 /* .footer {

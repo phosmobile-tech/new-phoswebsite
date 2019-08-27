@@ -80,7 +80,7 @@
           </li>
         </ul>
       </section> -->
-
+      <section>
       <nav class="articles">
         <div class="contain">
           <ul>
@@ -104,16 +104,19 @@
           </ul>
         </div>
       </nav>
+      </section>
 
-      <div class="footer-spacer">
+      <section class="footer-section">
+      <div class="footer-spacer"></div>
         <footer>
           <g-link></g-link>
           <div class="footer-content">
-            <h2>JUST REACH OUT! <span>Let's Chat.</span></h2>
+            <h2 class="footer-text">JUST REACH OUT! <span class="footer-span">Let's Chat.</span></h2>
           </div>
           <div class="footer-secondary"></div>
         </footer>
-      </div>
+      
+      </section>
   
   </Layout>
 </template>
@@ -316,12 +319,15 @@ nav.articles ul li a {
   transition: transform .3s ease;
 }
 
+.footer-section {
+  background: #ff5c5c;
+}
+
 footer {
   position: fixed;
   z-index: 0;
   bottom: 0;
   width: 100%;
-  background: #ff5c5c;
   padding-top: 0;
   border: 0 solid white;
   border-top: 0px;
@@ -331,17 +337,21 @@ footer {
 .footer-spacer{
   position: relative;
   z-index: -1;
-  height: 160px;
+  height: 40em;
 }
 
 footer .footer-content {
-  position: fixed;
+  /* position: fixed; */
   z-index: -1;
   left: 50%;
   width: 100%;
   text-align: center;
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
   transition: bottom .3s ease;
+}
+.footer-text{
+  color: white;
+  /* margin-top: -50px; */
 }
 
 </style>
