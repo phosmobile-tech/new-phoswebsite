@@ -113,7 +113,19 @@
           <div class="footer-content">
             <h2 class="footer-text">JUST REACH OUT! <span class="footer-span">Let's Chat.</span></h2>
           </div>
-          <div class="footer-secondary"></div>
+          <div class="footer-secondary">
+            <div class="footer-contain">
+              <ul class="footer-info">
+                <li>&copy PhosMobile</li>
+                <li>Contact Us</li>
+              </ul>
+              <ul class="footer-social">
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Facebook</li>
+              </ul>
+            </div>
+          </div>
         </footer>
       
       </section>
@@ -321,6 +333,8 @@ nav.articles ul li a {
 
 .footer-section {
   background: #ff5c5c;
+  color: white;
+  
 }
 
 footer {
@@ -337,7 +351,7 @@ footer {
 .footer-spacer{
   position: relative;
   z-index: -1;
-  height: 40em;
+  height: 50em;
 }
 
 footer .footer-content {
@@ -352,6 +366,16 @@ footer .footer-content {
 .footer-text{
   color: white;
   /* margin-top: -50px; */
+}
+
+.footer-contain ul {
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.footer-contain ul li {
+  margin-right: 15px;
+    text-align: center;
 }
 
 </style>
