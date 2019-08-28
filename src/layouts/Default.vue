@@ -29,9 +29,14 @@ query {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
+
+@media screen {
+  
+}
+
 body {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
+  margin: auto 0;
   padding: 0;
 }
 
@@ -39,6 +44,7 @@ body {
   margin: 0;
   padding: 0;
   max-width: 100%;
+  box-sizing: border-box;
 }
 
 .header {
@@ -51,6 +57,7 @@ body {
   height: 80px; 
   padding-inline-start: 160px;
   padding-inline-end: 100px;
+  z-index: 11;
 }
 
 .nav__link {

@@ -81,9 +81,7 @@ module.exports = function (api) {
         title: blog.title,
         path: blog.path,
         // img: blog.img,
-        fields: {
-          content: blog.content
-        }
+        content: blog.content
       })
     }
   })

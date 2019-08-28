@@ -1,11 +1,7 @@
 <template>
-   <div>
       <Layout>
          <BlogList></BlogList>
       </Layout>
-      
-      
-  </div>
 </template>
 
 <page-query>

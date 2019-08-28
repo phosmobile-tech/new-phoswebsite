@@ -12,7 +12,6 @@
 <page-query>
 query BlogData($path: String!) {
   blogdata: blogData(path: $path) {
-    id,
     title,
     content
   }

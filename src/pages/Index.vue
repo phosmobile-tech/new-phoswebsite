@@ -60,27 +60,6 @@
       </div>
       </section>
 
-      <!-- <section class="article-container">
-        <ul class="article-list">
-          <li class="categories">
-            <g-link to="" class="category-text"></g-link>
-              <div class="article-left">
-                <span class="article-top">CULTURE, OUR TEAM</span>
-                <h3>OUT OF FOCUS: <br> CASHIERS</h3>
-                  <h6>BY KELLIE GROOVER</h6>
-              </div>
-            
-          </li>
-          <li class="categories">
-            <g-link to="" class="category-text"></g-link>
-              <div>
-                <h3>BEST PRACTICES <br> FOR LAUNCHING <br> YOUR BRAND</h3>
-                  <h6>BY SUMMER TEAL</h6>
-              </div>
-            
-          </li>
-        </ul>
-      </section> -->
       <section>
       <nav class="articles">
         <div class="contain">
