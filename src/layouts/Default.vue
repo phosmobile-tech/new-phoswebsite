@@ -30,8 +30,11 @@ query {
 <style>
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
 
-@media screen {
-  
+@media screen and (min-width: 400px) {
+  body {
+    margin-left: 20px;
+    margin-right: 20px; 
+      }
 }
 
 body {
