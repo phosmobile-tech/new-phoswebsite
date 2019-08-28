@@ -1,11 +1,24 @@
 <template>
    <div>
       <Layout>
-
          <CareerList></CareerList>
       </Layout>
   </div>
 </template>
+
+<page-query>
+query careerData {
+  careerdata: allCareerData {
+    edges{
+      node{
+        id,
+        title,
+        path
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 import CareerList from '../components/CareerList'

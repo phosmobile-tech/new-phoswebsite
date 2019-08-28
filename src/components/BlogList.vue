@@ -1,25 +1,21 @@
 <template>
   <div>
     <ul>
-        <li>
-            <g-link to="/blogs/blog-one">Post One</g-link>
-        </li>
-        <li>
-            <g-link to="/blogs/blog-two">Post Two</g-link>
-        </li>
+      <li v-for="edge in $page.blogdata.edges" :key="edge.node.id">
+          <g-link :to="edge.node.path">{{ edge.node.title }}</g-link>
+      </li>
     </ul>
-      
   </div>
 </template>
 
 <script>
 export default {
     metaInfo: {
-      title: 'BlogList'
+      title: 'Blog List'
     }
 }
 </script>
 
 <style>
 
-</style>
+</style> 

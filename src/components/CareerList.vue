@@ -1,14 +1,10 @@
 <template>
   <div>
     <ul>
-        <li>
-            <g-link to="/careers/career-one">Career One</g-link>
-        </li>
-        <li>
-            <g-link to="/careers/career-two">Career Two</g-link>
-        </li>
+      <li v-for="edge in $page.careerdata.edges" :key="edge.node.id">
+          <g-link :to="edge.node.path">{{ edge.node.title }}</g-link>
+      </li>
     </ul>
-      
   </div>
 </template>
 
@@ -22,4 +18,4 @@ export default {
 
 <style>
 
-</style>
+</style> 

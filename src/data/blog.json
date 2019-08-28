@@ -1,20 +1,20 @@
 [
 	{
 		"id": 1,
-        "title": "Career One",
-        "path": "/careers/one",
+        "title": "Post One",
+        "path": "/blog/post-one",
         "content": "StoryBots is both a digital learning platform and Emmy Award-winning Netflix series for children centered around curious creatures who live in the world beneath our screens. Armed with a clever concept and product, the StoryBots team approached us to elevate their current design system. Our task was to bring a level of consistency to the StoryBots brand as they grew their reach across web, print, and digital media."
 	},
 	{
 		"id": 2,
-        "title": "Career Two",
-        "path": "/careers/two",
+        "title": "Post Two",
+        "path": "/blog/post-two",
         "content": "StoryBots is both a digital learning platform and Emmy Award-winning Netflix series for children centered around curious creatures who live in the world beneath our screens. Armed with a clever concept and product, the StoryBots team approached us to elevate their current design system. Our task was to bring a level of consistency to the StoryBots brand as they grew their reach across web, print, and digital media."
-	},
-	{
+    },
+    {
 		"id": 3,
-        "title": "Career Three",
-        "path": "/careers/three",
+        "title": "Post Three",
+        "path": "/blog/post-three",
         "content": "StoryBots is both a digital learning platform and Emmy Award-winning Netflix series for children centered around curious creatures who live in the world beneath our screens. Armed with a clever concept and product, the StoryBots team approached us to elevate their current design system. Our task was to bring a level of consistency to the StoryBots brand as they grew their reach across web, print, and digital media."
-	}
+    }
 ]

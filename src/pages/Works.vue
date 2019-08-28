@@ -10,12 +10,12 @@
 </template>
 
 <page-query>
-query dataWork {
-  datawork: allDataWork {
+query workData {
+  workdata: allWorkData {
     edges{
       node{
-        id
-        title
+        id,
+        title,
         path
       }
     }
@@ -23,16 +23,15 @@ query dataWork {
 }
 </page-query>
 
+
 <script>
 import WorkList from '../components/WorkList'
-// import DataWork from '../templates/DataWork'
 export default {
    metaInfo: {
     title: 'Works'
   },
   components: {
-     WorkList,
-    //  DataWork
+     WorkList
   }
 }
 </script>

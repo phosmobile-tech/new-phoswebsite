@@ -15,67 +15,76 @@ module.exports = function (api) {
   })
 }
 
-// const works = require(data in './src/data/data.json')
+// PRODUCT.JSON FILE
+const products = require('./src/data/product.json')
 // WORK.JSON FILE
-const posts = require('./src/data/work.json')
+const works = require('./src/data/work.json')
+// CAREER.JSON FILE
+const careers = require('./src/data/career.json')
+// BLOG.JSON FILE
+const blogs = require('./src/data/blog.json')
+
 
 module.exports = function (api) {
   api.loadSource(store => {
-    const contentType = store.addContentType({
-      typeName: 'DataWork'
+    const productsContent = store.addContentType({
+      typeName: 'ProductData'
+    })
+    const worksContent = store.addContentType({
+      typeName: 'WorkData'
+    })
+    const careersContent = store.addContentType({
+      typeName: 'CareerData'
+    })
+    const blogsContent = store.addContentType({
+      typeName: 'BlogData'
     })
 
-    for (const item of posts) {
-      contentType.addNode({
-        id: item.id,
-        title: item.title,
-        path: item.path,
-        img: item.img,
+    for (const product of products) {
+      productsContent.addNode({
+        id: product.id,
+        title: product.title,
+        path: product.path,
         fields: {
-          content: item.content
+          content: product.content
+        }
+      })
+    }
+
+    for (const work of works) {
+      worksContent.addNode({
+        id: work.id,
+        title: work.title,
+        path: work.path,
+        img: work.img,
+        fields: {
+          content: work.content
+        }
+      })
+    }
+
+    for (const career of careers) {
+      careersContent.addNode({
+        id: career.id,
+        title: career.title,
+        path: career.path,
+        // img: career.img,
+        fields: {
+          content: career.content
+        }
+      })
+    }
+
+    for (const blog of blogs) {
+      blogsContent.addNode({
+        id: blog.id,
+        title: blog.title,
+        path: blog.path,
+        // img: blog.img,
+        fields: {
+          content: blog.content
         }
       })
     }
   })
 }
-
-
-// DATA.JSON FILE
-// const product = require('./src/data/product.json')
-
-// module.exports = function (api) {
-//   api.loadSource(store => {
-//     const contentType = store.addContentType({
-//       typeName: 'Post'
-//     })
-
-//     for (const item of product) {
-//       contentType.addNode({
-//         id: item.id,
-//         title: item.title,
-//         path: item.path,
-//         content: item.content
-//       })
-//     }
-//   })
-// }
-
-// module.exports = function (api) {
-//   api.loadSource(store => {
-//     const contentType = store.addContentType({
-//       typeName: 'DataWork',
-//       route: '/works/:id'
-//     })
-
-//     for (const item of works) {
-//       contentType.addNode({
-//         id: work.id,
-//         title: work.title,
-//         path: '/works/'+work.slug,
-//         fields: {
-//           content: work.content
-//         }
-//       })
-//     }
-//   })
-// }

@@ -2,13 +2,23 @@
   <div>
       <Layout>
         <ProductList></ProductList>
-      </Layout>
-
-      
+      </Layout>  
   </div>
 </template>
 
-
+<page-query>
+query productData {
+  productdata: allProductData {
+    edges{
+      node{
+        id,
+        title,
+        path
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 import ProductList from '../components/ProductList'

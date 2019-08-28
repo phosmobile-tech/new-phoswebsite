@@ -15,7 +15,7 @@
       <section>
       <div class="img-container">
         <ul class="work-list">
-          <li class="img-list" v-for="edge in $page.datawork.edges" :key="edge.node.id">
+          <li class="img-list" v-for="edge in $page.workdata.edges" :key="edge.node.id">
             <g-link :to="edge.node.path"><g-image :src="edge.node.img" class="img"/><span class="img-title">{{ edge.node.title }}</span></g-link>
           </li>
         </ul>
@@ -136,8 +136,8 @@
 </template>
 
 <page-query>
-query dataWork {
-  datawork: allDataWork {
+query workData {
+  workdata: allWorkData {
     edges{
       node{
         title,
@@ -149,16 +149,12 @@ query dataWork {
 }
 </page-query>
 
+
 <script>
 export default {
   metaInfo: {
     title: 'Hello, world!'
   }
-  // data() {
-  //     return {
-  //       works: data.data.works
-  //     }
-  //   }
 }
 </script>
 

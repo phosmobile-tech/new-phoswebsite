@@ -13,9 +13,38 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        // route: 'work/:slug',
         path: 'works/**/*',
-        typeName: 'DataWork',
+        typeName: 'WorkData',
+        remark: {
+          // remark options
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'products/**/*',
+        typeName: 'ProductData',
+        remark: {
+          // remark options
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'careers/**/*',
+        typeName: 'CareerData',
+        remark: {
+          // remark options
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'blog/**/*',
+        typeName: 'BlogData',
         remark: {
           // remark options
         }
