@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="layout">
     <header class="header">
       <strong>
@@ -16,7 +17,33 @@
     </header>
     <slot/>
     <!-- <footer class="footer">All Rights Reserved | phosmobile.com</footer> -->
+    
   </div>
+
+  <section class="footer-section">
+      <div class="footer-spacer"></div>
+        <footer>
+          <g-link></g-link>
+          <div class="footer-content">
+            <h2 class="footer-text">JUST REACH OUT! <span class="footer-span">Let's Chat.</span></h2>
+          </div>
+          <div class="footer-secondary">
+            <div class="footer-contain">
+              <ul class="footer-info">
+                <li> &copy PhosMobile</li>
+                <li>Contact Us</li>
+              </ul>
+              <ul class="footer-social">
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Facebook</li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      
+      </section>
+</div>
 </template>
 
 <static-query>
@@ -44,38 +71,34 @@ query {
 } */
 
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
+
+
+@media only screen and (min-width: 768px) {
+  body {
+    /* background: blue; */
+    }
+} 
 
 body {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   margin: 0px;
   padding: 0px;
   background: white;
-  /* box-sizing: border-box; */
 }
 
 .layout {
-  margin: 0;
-  padding: 0;
-  /* max-width: 100%; */
-  box-sizing: border-box;
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto;
 }
 
 .header {
   font-family: 'Barlow Condensed';
   text-transform: uppercase;
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   margin-top: 20px;
   height: 80px; 
-  padding-inline-start: 160px;
-  padding-inline-end: 160px;
-  /* z-index: 11; */
 }
 
 .nav {
@@ -89,11 +112,52 @@ body {
 }
 
 .container {
-  max-width: 1200px;
-  padding-inline-start: 160px;
   margin-top: 15%;
-  padding-inline-end: 160px;
+  padding-inline-end: 0px;
   z-index: 10;
+}
+
+@media only screen and (min-width: 300px) {
+  body {
+    /* max-width: 90%; */
+    /* padding-left: 50%; */
+  } 
+  .layout{
+    /* margin: 0; */
+    /* padding: 0 10px; */
+  }
+  h1 {
+    /* font-size: ; */
+  }
+  .nav__link{
+    /* font-size: 20px; */
+  }
+  .header {
+    /* margin: 0;
+    align-items: center;
+  margin-top: 20px;
+  height: 80px; 
+  padding-inline-start: 80px;
+  padding-inline-end: 80px; */
+    /* flex-direction: column; */
+  }
+  .text{
+    /* font-size: 20px */
+    font-weight: 800
+  }
+  .nav{
+    /* margin-left: 5px;
+    flex-direction: column; */
+  }
+  /* nav.articles ul {
+    width: 60%;
+  } */
+}
+
+@media screen and (max-width: 600px) {
+  nav.articles ul {
+    /* width: 30%; */
+  }
 }
 
 </style>

@@ -1,4 +1,5 @@
 <template>
+<div>
   <Layout>
     <section class="main-section">
     <section class="container">
@@ -88,32 +89,10 @@
       </nav>
       </section>
       </section>
-
-      <section class="footer-section">
-      <div class="footer-spacer"></div>
-        <footer>
-          <g-link></g-link>
-          <div class="footer-content">
-            <h2 class="footer-text">JUST REACH OUT! <span class="footer-span">Let's Chat.</span></h2>
-          </div>
-          <div class="footer-secondary">
-            <div class="footer-contain">
-              <ul class="footer-info">
-                <li> &copy PhosMobile</li>
-                <li>Contact Us</li>
-              </ul>
-              <ul class="footer-social">
-                <li>Twitter</li>
-                <li>Instagram</li>
-                <li>Facebook</li>
-              </ul>
-            </div>
-          </div>
-        </footer>
-      
-      </section>
   
   </Layout>
+  
+  </div>
 </template>
 
 <page-query>
@@ -273,8 +252,8 @@ h6 {
   margin: 0 auto;
   border-top: 1px solid red;
 }
-/* 
-@media screen and (max-width: 600px;) {
+
+/* @media screen and (max-width: 600px) {
   nav.articles ul {
     width: 30%;
   }
@@ -369,6 +348,52 @@ footer .footer-content {
 .footer-contain ul li {
   margin-right: 15px;
     text-align: center;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  h1 {
+    /* font-size: ; */
+  }
+  h2{
+    font-size: x-large;
+  }
+  h3{
+
+  }
+  h6{
+
+  }
+  .text{
+    font-weight: 800
+  }
+  .header-span {
+    margin-left: 0;
+  }
+  .header-content{
+    display: block;
+  }
+  .nav{
+    /* margin-left: 5px;
+    flex-direction: column; */
+  }
+  .aside-ul {
+    position: inherit;
+  }
+  .aside-ul-left{
+
+  }
+  li{
+
+  }
+  /* nav.articles ul {
+    width: 60%;
+  } */
+}
+
+@media screen and (max-width: 600px) {
+  nav.articles ul {
+    /* width: 30%; */
+  }
 }
 
 </style>
