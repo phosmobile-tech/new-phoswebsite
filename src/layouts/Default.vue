@@ -123,6 +123,7 @@ body {
     /* padding-left: 50%; */
   } 
   .layout{
+    /* display: inline; */
     /* margin: 0; */
     /* padding: 0 10px; */
   }

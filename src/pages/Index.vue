@@ -29,8 +29,8 @@
           <h2>LET’S BUILD SOMETHING GREAT. TOGETHER.</h2>
           <div class="content">
             <p class="text">We are a strategic, creative studio based out of Savannah, Georgia. <br> Our close team of innovative professionals is passionate about partnering <br> with good people and organizations to design exceptional custom solutions. <br> We approach each project and design challenge with process-driven <br> intentionality to inform the identities and experiences we create. <br> We endeavor toward work that drives action, and generates results. <br> Are you looking to have greater impact? We’d love to help.</p>
-
-
+            </div>
+            <div class="content">
             <aside>
               <ul class="aside-ul">
                 <li><g-link to="" class="aside-a">Our Services</g-link></li>
@@ -350,7 +350,11 @@ footer .footer-content {
     text-align: center;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 600px) {
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+  .layout {
+    /* display: inline; */
+    width: 320px;
+  }
   h1 {
     /* font-size: ; */
   }
@@ -379,6 +383,9 @@ footer .footer-content {
   .aside-ul {
     position: inherit;
   }
+  .work-list{
+    display: inline-block;
+  }
   .aside-ul-left{
 
   }
@@ -390,7 +397,7 @@ footer .footer-content {
   } */
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 999px) {
   nav.articles ul {
     /* width: 30%; */
   }
