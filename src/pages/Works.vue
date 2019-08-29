@@ -1,8 +1,11 @@
 <template>
   <div>
       <Layout>
-        <WorkList></WorkList>
-        <!-- <DataWork></DataWork> -->
+        <section class="container">
+          <h1>RECENT PARTNERSHIP</h1>
+
+          <WorkList></WorkList>
+        </section>
       </Layout>
 
       

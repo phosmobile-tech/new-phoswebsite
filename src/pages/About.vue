@@ -1,7 +1,8 @@
 <template>
   <Layout>
+    <section class="container">
     <h1>About us</h1>
-    
+    </section>
   </Layout>
 </template>
 

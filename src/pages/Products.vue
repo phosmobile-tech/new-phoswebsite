@@ -1,7 +1,9 @@
 <template>
   <div>
       <Layout>
+        <section class="container">
         <ProductList></ProductList>
+        </section>
       </Layout>  
   </div>
 </template>

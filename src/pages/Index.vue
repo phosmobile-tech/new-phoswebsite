@@ -3,10 +3,12 @@
     <section class="main-section">
     <section class="container">
       <h1>SOLUTIONS BY DESIGN</h1>
+      <div class="header-content">
       <span class="text">We build identities and experiences to <br> elevate and empower organizations.</span>
-      <div class="span-text">
-        <span class="sub-text">HELPING OUR PARTNERS MOVE FORWARD THROUGH</span>
-        <span class="sub-link"><g-link to="">Discovery & Strategy,</g-link><g-link to="">Branding,</g-link> <g-link to="">Interactive,</g-link><br> <g-link to="">Communications,</g-link> <g-link to="">Creative Production and</g-link><br> <g-link to="">Development Solutions</g-link></span>
+      <div class="header-span">
+        <span class="header-text">HELPING OUR PARTNERS MOVE FORWARD THROUGH</span> <br>
+        <span class="header-link"><g-link to="">Discovery & Strategy,</g-link><g-link to="">Branding,</g-link> <g-link to="">Interactive,</g-link><br> <g-link to="">Communications,</g-link> <g-link to="">Creative Production and</g-link><br> <g-link to="">Development Solutions</g-link></span>
+      </div>
       </div>
     </section>
 
@@ -60,7 +62,7 @@
       </div>
       </section>
 
-      <section>
+      <section class="container">
       <nav class="articles">
         <div class="contain">
           <ul>
@@ -182,30 +184,26 @@ h6 {
   
 }
 
-.sub-text {
+.header-content {
+  display: inline-flex;
+}
+
+.header-text {
   font-family: 'Barlow Condensed';
-  float: right;
-  margin-right: 150px;
-  margin-bottom: 15px;
-  margin-top: -15px;
   font-size: 20px;
 }
 
-.sub-link {
+.header-link {
   font-size: 20px;
-  float: right;
-  margin-right: 120px; 
 } 
 
-.sub-link a {
+.header-link a {
     color: #ff5c5c;
 }
 
-.span-text {
-  margin-top: -50px;
-  float: right;
-  /* margin-left: 310px;  */
-  line-height: 1.5;
+.header-span {
+   margin-left: 100px; 
+   line-height: 1.7;
 }
 
 .main-section {
@@ -232,10 +230,6 @@ h6 {
 .img-list {
   margin-right: 20px;
 }
-
-/* .img-title {
-  text-decoration: none;
-} */
 
 .content {
   margin-top: 5%;
@@ -279,6 +273,12 @@ h6 {
   margin: 0 auto;
   border-top: 1px solid red;
 }
+/* 
+@media screen and (max-width: 600px;) {
+  nav.articles ul {
+    width: 30%;
+  }
+} */
 
 nav.articles ul {
   list-style-type: none;
@@ -304,7 +304,7 @@ nav.articles ul li a {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
+  /* width: 40%; */
   /* height: 100%; */
 }
 
@@ -316,7 +316,6 @@ nav.articles ul li a {
 .footer-section {
   background: #ff5c5c;
   color: white;
-  
 }
 
 footer {
@@ -337,6 +336,7 @@ footer {
   position: relative;
   z-index: -1;
   height: 32em;
+  /* position: fixed; */
 }
 
 footer .footer-content {
@@ -352,6 +352,7 @@ footer .footer-content {
   color: white;
   line-height: 0;
   margin-bottom: 5em;
+  /* position: fixed; */
   /* margin-top: -50px; */
 }
 
@@ -362,6 +363,7 @@ footer .footer-content {
 .footer-contain ul {
   list-style-type: none;
   display: inline-flex;
+  /* padding-inline-start: 0px */
 }
 
 .footer-contain ul li {

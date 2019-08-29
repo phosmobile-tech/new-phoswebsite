@@ -1,7 +1,9 @@
 <template>
    <div>
       <Layout>
+        <section class="container">
          <CareerList></CareerList>
+        </section>
       </Layout>
   </div>
 </template>
