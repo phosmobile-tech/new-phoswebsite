@@ -32,7 +32,7 @@
     
   </div>
 
-  <!-- <section class="footer-section">
+  <section class="footer-section">
       <div class="footer-spacer"></div>
         <footer>
           <g-link></g-link>
@@ -54,7 +54,7 @@
           </div>
         </footer>
       
-      </section> -->
+      </section>
 </div>
 </template>
 
@@ -68,30 +68,7 @@ query {
 
 <script>
 export default {
-  methods:{
-   openNav() {
-  // getElementById("myNav") = 100
-},
- closeNav() {
-  // getElementById("myNav") = 10
-}
-  }
-// computed: {
-  // data: {
-  //   myNav: 100
-  // },
-  // props: {
-  //   myNav
-  // },
-  // openNav: function() {
-  //   document.getElementById("myNav").style.height = "100%";
-  //   this.myNav
-  // },
-  // closeNav: function() {
-  //   document.getElementById("myNav").style.height = "0%";
-  //   this.myNav
-  // }
-// }
+ 
 }
 </script>
 
@@ -307,6 +284,10 @@ body {
 .header .menu-icon .navicon {
   background: white;
   }
+
+.footer-section {
+  /* overflow: hidden; */
+}
  
 
 }
