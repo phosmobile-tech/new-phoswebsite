@@ -7,6 +7,13 @@
       </strong>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+      <!-- The overlay -->
+<!-- <div v-show="myNav" class="overlay"> -->
+
+  <!-- Button to close the overlay navigation -->
+  <!-- <a href="javascript:void(0)" class="closebtn" :onclick="closeNav()">&times;</a> -->
+
       <nav class="nav">
         <g-link class="nav__link" to="/">Home</g-link>
         <g-link class="nav__link" to="/about">About Us</g-link>
@@ -16,6 +23,9 @@
         <g-link class="nav__link" to="/blog">Blog</g-link>
         <g-link class="nav__link" to="/contact">Contact Us</g-link>
       </nav>
+
+<!-- <span class="toggle" :onclick="openNav()">&#9776; open</span> -->
+
     </header>
     <slot/>
     <!-- <footer class="footer">All Rights Reserved | phosmobile.com</footer> -->
@@ -56,6 +66,35 @@ query {
 }
 </static-query>
 
+<script>
+export default {
+  methods:{
+   openNav() {
+  // getElementById("myNav") = 100
+},
+ closeNav() {
+  // getElementById("myNav") = 10
+}
+  }
+// computed: {
+  // data: {
+  //   myNav: 100
+  // },
+  // props: {
+  //   myNav
+  // },
+  // openNav: function() {
+  //   document.getElementById("myNav").style.height = "100%";
+  //   this.myNav
+  // },
+  // closeNav: function() {
+  //   document.getElementById("myNav").style.height = "0%";
+  //   this.myNav
+  // }
+// }
+}
+</script>
+
 <style>
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
 
@@ -85,6 +124,7 @@ body {
 }
 
 .site-name{
+  text-decoration: none;
   /* display: block; */
   /* float: left;
   font-size: 2em;
@@ -99,15 +139,23 @@ body {
   /* display: flex; */
 }
 
-/* .header .menu-btn {
+.toggle{
   display: none;
-} */
+}
+
+.header .menu-btn {
+  display: none;
+}
 
 .nav__link {
   margin-right: 50px;
   text-decoration: none;
   font-size: 18px;
 }
+
+/* .overlay {
+  display: none;
+} */
 
 .container {
   margin-top: 15%;
@@ -127,9 +175,9 @@ body {
 
 .menu-icon {
   cursor: pointer;
-  display: inline-block;
+  /* display: inline-block; */
   float: right;
-  padding: 28px 20px;
+  padding: 0px 20px;
   position: relative;
   user-select: none;
   /* margin-left: 240px; */
@@ -169,11 +217,6 @@ body {
   display: none;
 }
 
-.header .menu-btn:checked ~ .nav {
-  /* min-height: 0; */
-  max-height: 240px;
-}
-
 .header .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent;
 }
@@ -192,9 +235,38 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
+
+  /* .overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ff5c5c;
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+} */
+
+.nav {
+  position: relative;
+  margin-left: 0%;
+  /* top: 25%; */
+  /* width: 100%; */
+  /* height: 300px; */
+  /* display: block; */
+  /* text-align: center; */
+  /* margin-top: 30px; */
+}
+
+.toggle {
+  font-size: 30px;
+  cursor: "pointer";
+}
+
   body {
-    /* max-width: 90%; */
-    /* padding-left: 50%; */
+    width: 480px;
   } 
   .layout{
     /* display: inline; */
@@ -207,25 +279,34 @@ body {
   .site-name{
     color: white;
     text-decoration: none;
+    margin-left: 15px;
+    margin-top: 30%;
   }
   .nav__link{
-        color: white;
+    color: white;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    line-height: 3.0;
   }
   .header {
-    display: block;
-    background: #ff5c5c;
-    height: fit-content;
-    margin-top: 0;
-    overflow: hidden;
+    /* display: block; */
+    /* display: flex; */
+    
+    /* height: 300px; */
   }
   .text{
     font-weight: 800
   }
-  /* .nav{
-    display: grid;
 
-  } */
+  .header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: white;
+  }
 
+.header .menu-icon .navicon {
+  background: white;
+  }
  
 
 }
@@ -233,12 +314,12 @@ body {
 /* 48em = 768px */
 
 @media (min-width: 48em) {
-  /* .header .nav__link {
+  .header .nav__link {
     float: left;
   }
-  .header .nav__link { */
+  .header .nav__link {
     /* padding: 20px 30px; */
-  /* }
+  }
   .header .nav{
     clear: none;
     float: right;
@@ -246,7 +327,7 @@ body {
   }
   .header .menu-icon {
     display: none;
-  } */
+  }
 }
 
 

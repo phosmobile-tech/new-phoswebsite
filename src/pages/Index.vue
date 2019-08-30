@@ -200,11 +200,11 @@ h6 {
 }
 
 .work-list {
-    display: flex;
-    list-style-type: none;
-    width: fit-content;
-    padding-inline-start: 0;
-    padding-inline-end: 0;
+  display: flex;
+  list-style-type: none;
+  width: fit-content;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
 }
 .img-list {
   margin-right: 20px;
@@ -342,6 +342,14 @@ footer .footer-content {
     /* display: inline; */
     width: 480px;
   }
+  .header {
+    display: block;
+    background: #ff5c5c;
+    height: fit-content;
+    margin-top: 0;
+    padding: 20px 10px;
+    overflow-x: hidden;
+  }
   h1 {
     font-size: xx-large;
     margin: 25% 0 15% 0;
@@ -371,13 +379,19 @@ footer .footer-content {
     /* margin-left: 5px;
     flex-direction: column; */
   }
+
+.header .menu-btn:checked ~ .nav {
+  min-height: 0;
+  max-height: 50%;
+}
+
   .aside {
     float: left;
     margin: 0;
     position: absolute;
   }
   .container {
-    width: 300px;
+    /* width: 300px; */
     margin: 0 30px;
   }
 
