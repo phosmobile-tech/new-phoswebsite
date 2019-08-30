@@ -31,7 +31,7 @@
             <p class="text">We are a strategic, creative studio based out of Savannah, Georgia. <br> Our close team of innovative professionals is passionate about partnering <br> with good people and organizations to design exceptional custom solutions. <br> We approach each project and design challenge with process-driven <br> intentionality to inform the identities and experiences we create. <br> We endeavor toward work that drives action, and generates results. <br> Are you looking to have greater impact? We’d love to help.</p>
             </div>
             <div class="content">
-            <aside>
+            <aside class="aside">
               <ul class="aside-ul">
                 <li><g-link to="" class="aside-a">Our Services</g-link></li>
                 <li><g-link to="" class="aside-a">Read Our Story</g-link></li>
@@ -181,7 +181,7 @@ h6 {
 }
 
 .header-span {
-   margin-left: 100px; 
+   margin-left: 200px; 
    line-height: 1.7;
 }
 
@@ -211,7 +211,7 @@ h6 {
 }
 
 .content {
-  margin-top: 5%;
+  margin-top: 15%;
 }
 
 .aside-ul {
@@ -219,7 +219,7 @@ h6 {
   position: relative;
   list-style-type: none;
   width: 25%;
-  margin-top: -220px;
+  margin-top: -360px;
 }
 
 .aside-a {
@@ -253,18 +253,11 @@ h6 {
   border-top: 1px solid red;
 }
 
-/* @media screen and (max-width: 600px) {
-  nav.articles ul {
-    width: 30%;
-  }
-} */
-
 nav.articles ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   font-size: 1.125em;
-  /* padding-inline-start: 100px; */
 }
 
 nav.articles ul li {
@@ -272,7 +265,7 @@ nav.articles ul li {
   position: relative;
   padding: 7% 4%;
   cursor: pointer;
-  /* display: block; */
+  width: 40%;
 }
 
 .article-list {
@@ -283,8 +276,6 @@ nav.articles ul li a {
   position: absolute;
   top: 0;
   left: 0;
-  /* width: 40%; */
-  /* height: 100%; */
 }
 
 .inner-content {
@@ -300,8 +291,6 @@ nav.articles ul li a {
 footer {
   position: fixed;
   height: 20em;
-  /* left: 0;
-  z-index: 0; */
   bottom: 0;
   width: 100%;
   padding-top: 0;
@@ -311,11 +300,9 @@ footer {
 }
 
 .footer-spacer{
-  /* background: #ff5c5c; */
   position: relative;
   z-index: -1;
   height: 32em;
-  /* position: fixed; */
 }
 
 footer .footer-content {
@@ -350,28 +337,32 @@ footer .footer-content {
     text-align: center;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 599px) {
+@media only screen and (max-width: 480px) {
   .layout {
     /* display: inline; */
-    width: 320px;
+    width: 480px;
   }
   h1 {
-    /* font-size: ; */
+    font-size: xx-large;
+    margin: 25% 0 15% 0;
   }
   h2{
-    font-size: x-large;
+    /* font-size: x-large; */
+    line-height: 1.3;
+    margin-top: 25%;
   }
   h3{
-
+    
   }
   h6{
 
   }
   .text{
-    font-weight: 800
+    /* font-weight: 800 */
   }
   .header-span {
     margin-left: 0;
+    margin-top: 10%;
   }
   .header-content{
     display: block;
@@ -380,27 +371,79 @@ footer .footer-content {
     /* margin-left: 5px;
     flex-direction: column; */
   }
+  .aside {
+    float: left;
+    margin: 0;
+    position: absolute;
+  }
+  .container {
+    width: 300px;
+    margin: 0 30px;
+  }
+
+  .aside-a {
+    
+  }
   .aside-ul {
     position: inherit;
+    margin-top: 0;
+    display: contents;
   }
   .work-list{
     display: inline-block;
   }
   .aside-ul-left{
-
+    position: inherit;
+    margin-top: 0;
+    display: contents;
   }
-  li{
-
-  }
-  /* nav.articles ul {
-    width: 60%;
+  /* .cont{
+    margin-top: 60%;
   } */
-}
-
-@media screen and (min-width: 600px) and (max-width: 999px) {
+  .img-list {
+    /* width: 100%;   */
+    display: table-caption;
+  }
+  .content{
+    margin-top: 0;
+  }
+  .content-right{
+    margin-top: 20%;
+  }
   nav.articles ul {
-    /* width: 30%; */
+    /* width: 100%; */
+  }
+  nav.articles ul li {
+    width: 100%;
+  }
+  .article-list {
+    border-right: none;
+    border-bottom: 1px solid red;
+  }
+  footer {
+    width: 320px;
+  }
+  .footer-text {
+    line-height: 1.5;
+    text-align: center;
+  }
+  .footer-content {
+    text-align: center;
+    margin-left: 8%;
+  }
+  .footer-text {
+  margin-bottom: 0;
+  }
+  .footer-contain {
+    text-align: center;
+    /* margin-left: 5%; */
   }
 }
+
+/* @media screen and (min-width: 600px) and (max-width: 999px) {
+  nav.articles ul {
+    width: 30%;
+  }
+} */
 
 </style>

@@ -3,8 +3,10 @@
   <div class="layout">
     <header class="header">
       <strong>
-        <g-link to="/">{{ $static.metaData.siteName }}</g-link>
+        <g-link class="site-name" to="/">{{ $static.metaData.siteName }}</g-link>
       </strong>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <nav class="nav">
         <g-link class="nav__link" to="/">Home</g-link>
         <g-link class="nav__link" to="/about">About Us</g-link>
@@ -20,7 +22,7 @@
     
   </div>
 
-  <section class="footer-section">
+  <!-- <section class="footer-section">
       <div class="footer-spacer"></div>
         <footer>
           <g-link></g-link>
@@ -42,7 +44,7 @@
           </div>
         </footer>
       
-      </section>
+      </section> -->
 </div>
 </template>
 
@@ -56,28 +58,6 @@ query {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
-
-/* @media screen and (min-width: 400px) {
-  body {
-    margin-left: 20px;
-    margin-right: 20px; 
-    }
-}
-
-@media screen and (max-width: 992px) {
-  .column {
-    width: 50%;
-  }
-} */
-
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-
-
-@media only screen and (min-width: 768px) {
-  body {
-    /* background: blue; */
-    }
-} 
 
 body {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -99,11 +79,29 @@ body {
   align-items: center;
   margin-top: 20px;
   height: 80px; 
+  /* width: 100%; */
+  /* overflow: scroll; */
+  z-index: 300;
 }
+
+.site-name{
+  /* display: block; */
+  /* float: left;
+  font-size: 2em;
+  padding: 0 20px 0 20px;
+  text-decoration: none; */
+}
+
+/* nav */
 
 .nav {
   margin-left: 17%;
+  /* display: flex; */
 }
+
+/* .header .menu-btn {
+  display: none;
+} */
 
 .nav__link {
   margin-right: 50px;
@@ -117,7 +115,83 @@ body {
   z-index: 10;
 }
 
-@media only screen and (min-width: 300px) {
+ /* toggle bar menu */
+
+.header .nav {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+  /* margin-left: 240px; */
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: #333 .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .nav {
+  /* min-height: 0; */
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media only screen and (max-width: 480px) {
   body {
     /* max-width: 90%; */
     /* padding-left: 50%; */
@@ -130,35 +204,50 @@ body {
   h1 {
     /* font-size: ; */
   }
+  .site-name{
+    color: white;
+    text-decoration: none;
+  }
   .nav__link{
-    /* font-size: 20px; */
+        color: white;
   }
   .header {
-    /* margin: 0;
-    align-items: center;
-  margin-top: 20px;
-  height: 80px; 
-  padding-inline-start: 80px;
-  padding-inline-end: 80px; */
-    /* flex-direction: column; */
+    display: block;
+    background: #ff5c5c;
+    height: fit-content;
+    margin-top: 0;
+    overflow: hidden;
   }
   .text{
-    /* font-size: 20px */
     font-weight: 800
   }
-  .nav{
-    /* margin-left: 5px;
-    flex-direction: column; */
+  /* .nav{
+    display: grid;
+
+  } */
+
+ 
+
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  /* .header .nav__link {
+    float: left;
   }
-  /* nav.articles ul {
-    width: 60%;
+  .header .nav__link { */
+    /* padding: 20px 30px; */
+  /* }
+  .header .nav{
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
   } */
 }
 
-@media screen and (max-width: 600px) {
-  nav.articles ul {
-    /* width: 30%; */
-  }
-}
 
 </style>
